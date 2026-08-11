@@ -9,11 +9,11 @@
 ## Быстрый старт
 
 1. Поставь [r2modman](https://thunderstore.io/package/ebkr/r2modman/) → игра **Valheim** → свой профиль.
-2. По [`docs/STACK.md`](docs/STACK.md): поставь всё из **Required**, удали/выключи **Must remove**. Контент-моды — по полному списку (иначе missing prefabs).
-3. Скачай **`YanloMods-….zip`** с [Latest Release](https://github.com/yanlogan/valheim/releases/latest) → распакуй папки `Yanlo-*` в  
+2. По [`docs/STACK.md`](docs/STACK.md): поставь всё из **Обязательно**, пройди **Удалить**. Контент-моды — по полному списку (иначе missing prefabs).
+3. Скачай **`YanloMods-….zip`** с [последнего релиза](https://github.com/yanlogan/valheim/releases/latest) → распакуй папки `Yanlo-*` в  
    `%AppData%\r2modmanPlus-local\Valheim\profiles\<твой_профиль>\BepInEx\plugins\`.
-4. Выставь **shared cfg** из [STACK → Shared cfg](docs/STACK.md#shared-cfg-без-хоткеев) (только указанные ключи; **свои хоткеи не затирай**).
-5. Глянь [HOWTO](docs/HOWTO.md) и [последние изменения](docs/CHANGES.md) / Discord от хоста.
+4. Выставь ключи из [STACK → Конфиги](docs/STACK.md#конфиги) (**свои хоткеи не затирай**).
+5. Раздел **По желанию** в STACK — по вкусу; глянь [Как играть](docs/HOWTO.md) и [Что изменилось](docs/CHANGES.md) / Discord от хоста.
 
 Чужие моды — только через r2modman (Thunderstore). Полный export профиля (~1 ГБ) сюда не кладём.
 
@@ -36,6 +36,7 @@
 | Нет кнопки Unload / карта на лодке как ваниль | Не распакован **Yanlo** zip в `plugins/` |
 | Sort пакует снизу вверх | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**) |
 | Крафт жрёт ресурсы дважды | V+ `CraftFromChest` должен быть **false** при CraftyBoxes |
+| В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот `.yml` из `BepInEx/config/` (`.cfg` не трогай); мод создаст файл заново |
 
 ---
 

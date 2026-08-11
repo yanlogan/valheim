@@ -6,23 +6,23 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 Геймплей: [HOWTO.md](HOWTO.md)
 
 В таблицах: **имя** — как искать Online; **folder** — папка в `plugins/` после Install.  
-Ссылки ведут на страницу пакета Thunderstore (версия у хоста может отличаться — ориентируйся на **Required versions** ниже, где указано).
+Ссылки ведут на страницу пакета Thunderstore (версия у хоста может отличаться — ориентируйся на версии в таблицах **Обязательно**, где указано).
 
 ---
 
 ## Как поставить
 
 1. Online → поиск по имени → Install → Enable.
-2. Пройди **Must remove**.
+2. Пройди **Удалить**.
 3. Распакуй `YanloMods-….zip` из Release в `BepInEx/plugins/` (папки `Yanlo-*`).
-4. Выставь [Shared cfg](#shared-cfg-без-хоткеев).
-5. Optional — по желанию.
+4. Выставь [Конфиги](#конфиги).
+5. **По желанию** — что нужно из списка ниже.
 
-Практично: тот же enabled-список, что у хоста, минус личный optional.
+Практично: тот же enabled-список, что у хоста, минус личное из «По желанию».
 
 ---
 
-## Must remove
+## Удалить
 
 | Имя | Folder | Почему |
 |-----|--------|--------|
@@ -35,7 +35,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Required — зависимости
+## Обязательно — зависимости
 
 | Имя | Folder | Thunderstore |
 |-----|--------|--------------|
@@ -48,7 +48,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Required — инвентарь / крафт / wards
+## Обязательно — инвентарь / крафт / wards
 
 | Имя | Folder | Версия / заметка | Thunderstore |
 |-----|--------|------------------|--------------|
@@ -68,7 +68,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Required — контент / мир
+## Обязательно — контент / мир
 
 Без этих модов — missing prefabs / нет кусков и предметов мира.
 
@@ -96,7 +96,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Required — Yanlo (не Thunderstore)
+## Обязательно — Yanlo (не Thunderstore)
 
 Скачай zip с [Latest Release](https://github.com/yanlogan/valheim/releases/latest) → папки в `plugins/`:
 
@@ -107,7 +107,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Optional (только клиент)
+## По желанию
 
 | Имя | Folder | Thunderstore |
 |-----|--------|--------------|
@@ -129,7 +129,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Shared cfg (без хоткеев)
+## Конфиги
 
 Копируй **только эти ключи**. Не затирай `*Keybind*` / свои бинды.
 
@@ -167,6 +167,8 @@ enabled = false
 enabled = true
 ```
 
-**WardIsLove:** свой Thorward на доме, Ward Range = число со знака; после рестарта сервера просто перезайди.
+---
 
-Если в логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` — удали этот `.yml` из `BepInEx/config/` (не трогай `.cfg`).
+## Дополнительно
+
+- **WardIsLove:** свой Thorward на доме, Ward Range = число со знака; после рестарта сервера просто перезайди.

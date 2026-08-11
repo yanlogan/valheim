@@ -27,7 +27,7 @@ Status: **open** · started: **2026-08-09**
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
 - Yanlo-QSSSortButtonOffset
-- Не ставить: AzuAutoStore, TrashItems (см. Must remove в STACK)
+- Не ставить: AzuAutoStore, TrashItems (см. Удалить в STACK)
 
 ### Config
 
