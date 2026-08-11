@@ -6,10 +6,10 @@ Discord: [`PENDING_DISCORD.md`](PENDING_DISCORD.md) · стек: [`CLIENT_STACK.
 
 ## Ссылки
 
-- **Full notes:** https://github.com/yanlogan/valheim/blob/master/changelogs/PENDING.md
+- **Full notes:** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
 - **Release:** _(после синка)_ https://github.com/yanlogan/valheim/releases/latest
 - **Yanlo zip:** asset на Release
-- **Client stack:** https://github.com/yanlogan/valheim/blob/master/CLIENT_STACK.md
+- **Client stack:** https://github.com/yanlogan/valheim/blob/main/CLIENT_STACK.md
 
 ---
 

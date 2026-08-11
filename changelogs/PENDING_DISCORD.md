@@ -1,7 +1,8 @@
 Ссылки:
-- Полный MD: https://github.com/yanlogan/valheim/blob/master/changelogs/PENDING.md
-- Release / Yanlo zip: https://github.com/yanlogan/valheim/releases/latest
-- Стек модов: https://github.com/yanlogan/valheim/blob/master/CLIENT_STACK.md
+- Полный MD: https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
+- Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-11
+- Yanlo zip: https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-11/YanloMods-cycle-2026-08-11.zip
+- Стек: https://github.com/yanlogan/valheim/blob/main/CLIENT_STACK.md
 
 What's Changed:
 Added: стек как у хоста (AzuEPI, QSS Sort+Trash, SC, Drawers, CraftyBoxes 1.8.15, V+, WardIsLove 3.7.2, MUC, Recycle, ImpactfulSkills, BoneAppetit, Cartography, PlanBuild 0.18.4 + контент); Yanlo-ChestUnloadButton 1.3.0; Yanlo-ShipExplorationAll 1.1.0

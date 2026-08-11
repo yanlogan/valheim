@@ -19,3 +19,4 @@ Desktop.ini
 *.pem
 *.key
 secrets/
+.gh_token.tmp

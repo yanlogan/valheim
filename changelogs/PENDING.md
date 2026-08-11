@@ -6,12 +6,12 @@ Discord: [`PENDING_DISCORD.md`](PENDING_DISCORD.md) · стек: [`CLIENT_STACK.
 
 ## Ссылки
 
-Заполняются при `release.ps1` / закрытии цикла (пока open — канон = этот файл):
+- **Full notes:** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
+- **Release:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-11
+- **Yanlo zip:** https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-11/YanloMods-cycle-2026-08-11.zip
+- **Client stack:** https://github.com/yanlogan/valheim/blob/main/CLIENT_STACK.md
 
-- **Full notes:** https://github.com/yanlogan/valheim/blob/master/changelogs/PENDING.md
-- **Release:** _(после синка)_ https://github.com/yanlogan/valheim/releases/latest
-- **Yanlo zip:** asset `YanloMods-cycle-….zip` на Release
-- **Client stack:** https://github.com/yanlogan/valheim/blob/master/CLIENT_STACK.md
+> Baseline release опубликован; цикл ещё **open** до «синк с друзьями» (тогда archive → новый PENDING).
 
 ---
 
