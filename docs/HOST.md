@@ -12,11 +12,13 @@
 | `mods/_archived/` | устаревшие |
 | `dist/` | сборка (gitignore) |
 | `docs/STACK.md` | канон стека для друзей |
+| `cfg/` | актуальные `.cfg` для друзей (копия целиком) |
 | `changelogs/PENDING.md` | дельта текущего цикла |
 | `changelogs/PENDING_DISCORD.md` | короткий Discord paste |
 | `scripts/build.ps1` | → `dist/Yanlo-*` |
 | `scripts/install-client.ps1` | `dist/` → `Valheim_Client/plugins` |
 | `scripts/release.ps1` | zip + GitHub Release `cycle-DATE` |
+| `scripts/sync-cfg.ps1` | Client `BepInEx/config` → `cfg/` |
 
 `BepInEx/plugins` — только install target (robocopy). Не git. Не junction.
 
@@ -31,6 +33,8 @@
 правки → .\scripts\build.ps1 → .\scripts\install-client.ps1 → тест
 → дописать changelogs/PENDING.md + PENDING_DISCORD.md
 → при смене стека обновить docs/STACK.md (+ HOWTO при новом UX)
+→ при правке cfg на Client: .\scripts\sync-cfg.ps1 (+ ключи в STACK → Конфиги)
+→ skill `valheim-config-docs`: **commit + push** `origin/main` автоматом (не ждать «пуш»)
 → «синк с друзьями»:
     PENDING.md → changelogs/YYYY-MM-DD_slug.md
     .\scripts\release.ps1 -Tag cycle-YYYY-MM-DD -NotesFile .\changelogs\YYYY-MM-DD_slug.md
@@ -50,6 +54,7 @@
 cd E:\Dev\yanlo-valheim
 .\scripts\build.ps1
 .\scripts\install-client.ps1
+.\scripts\sync-cfg.ps1
 .\scripts\release.ps1 -Tag cycle-2026-08-11 -NotesFile .\changelogs\2026-08-11_slug.md
 ```
 

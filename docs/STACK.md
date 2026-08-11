@@ -14,7 +14,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 1. Online → вставь **Имя** из таблицы → Install → Enable.
 2. Пройди **Удалить** (Disable / Uninstall, если стоит).
 3. Распакуй `YanloMods-….zip` из Release в `BepInEx/plugins/` (папки `Yanlo-*`).
-4. Выставь [Конфиги](#конфиги).
+4. [Конфиги](#конфиги): ключи вручную **или** готовые файлы из [`cfg/`](../cfg/).
 5. **По желанию** — что нужно из списка ниже.
 
 Практично: тот же enabled-список, что у хоста, минус личное из «По желанию».
@@ -137,7 +137,11 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 ## Конфиги
 <a id="конфиги"></a>
 
-Копируй **только эти ключи**. Не затирай `*Keybind*` / свои бинды.
+Путь: `%AppData%\r2modmanPlus-local\Valheim\profiles\<профиль>\BepInEx\config\`
+
+Исправь **только эти строчки**, если тебе нужно сохранить свои остальные настройки этого мода. Если не нужно — возьми готовый файл из [`cfg/`](../cfg/) (скопируй целиком поверх своего).
+
+Не затирай `*Keybind*` / свои бинды, если правишь вручную. `UseTopDownLogicForEverything` **не** приходит с сервера — выставь у себя (или возьми готовый QSS cfg).
 
 ```ini
 ; goldenrevolver.quick_stack_store.cfg
@@ -151,7 +155,6 @@ DisplaySortButtons = Both
 SortMergesStacks = false
 DisplayTrashCanUI = true
 AutoSort = Never
-; UseTopDownLogicForEverything НЕ приходит с сервера — выставь у себя
 
 ; flueno.SmartContainers.cfg
 [General]
