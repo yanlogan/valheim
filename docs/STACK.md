@@ -57,7 +57,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | AzuCraftyBoxes<br><sub>Azumatt</sub> | Крафт/стройка и счётчики HUD из соседних сундуков (~50 м). V+ CraftFromChest выкл |
 | AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | Доп. ряды инвентаря и слоты экипа |
 | Better_Cartography_Table<br><sub>nbusseneau</sub> | Шаринг пинов и эксплора через картографический стол; public — Shift+клик у стола ([HOWTO](HOWTO.md#карта-и-корабли)) |
-| ImpactfulSkills<br><sub>MidnightMods</sub> | Бонусы от скиллов + **Voyager** / **Hauling** / **Animal Whisper** |
+| ImpactfulSkills **0.12.0**<br><sub>MidnightMods</sub> | Бонусы от скиллов + **Voyager** / **Hauling** / **Animal Whisper** |
 | ItemDrawers<br><sub>makail</sub> | Настенный ящик на 1 тип, до **9999**; E / Alt+E / Shift+E, подбор с пола ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
 | MultiUserChest<br><sub>MSchmoecker</sub> | Несколько игроков открывают один сундук одновременно |
 | Official_BepInEx_ConfigurationManager<br><sub>Azumatt</sub> | Настройки модов по **F1** |

@@ -19,7 +19,7 @@ Status: **open** · started: **2026-08-09**
 
 - **AzuCraftyBoxes** <sub>от Azumatt</sub>
 - **Better_Cartography_Table** <sub>от nbusseneau</sub>
-- **ImpactfulSkills** <sub>от MidnightMods</sub>
+- **ImpactfulSkills** **0.12.0** <sub>от MidnightMods</sub> (обновить с 0.11.x — skill rates для мод-скиллов / AOE mining toggle)
 - **MultiUserChest** <sub>от MSchmoecker</sub>
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
