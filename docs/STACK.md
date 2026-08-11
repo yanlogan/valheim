@@ -31,6 +31,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | ShipExploration (GemHunter) | `GemHunter1-ShipExploration` | радиус карты на корабле | заменён на Yanlo-ShipExplorationAll |
 | No Build Restriction | `BlackViking-NoBuildRestriction` | снимает лимиты стройки | не используем |
 | Conditional Config Sync | `shudnal-ConditionalConfigSync` | условный sync cfg | сирота, не нужен |
+| Timed Torches Stay Lit | `TastyChickenLegs-TimedTorchesStayLit` | факелы не гаснут | только на **dedicated**; на клиенте не нужен |
 
 ---
 
