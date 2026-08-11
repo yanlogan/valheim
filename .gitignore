@@ -1,0 +1,21 @@
+# Build outputs
+dist/
+**/bin/
+**/obj/
+*.user
+*.suo
+.vs/
+*.pdb
+
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Secrets / local
+.env
+*.pem
+*.key
+secrets/

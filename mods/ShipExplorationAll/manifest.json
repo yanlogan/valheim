@@ -1,0 +1,8 @@
+{
+  "name": "ShipExplorationAll",
+  "version_number": "1.1.0",
+  "description": "Map explore radius: vanilla + OdinShip 0.7.6 (+Plus names) + default. Replaces GemHunter ShipExploration.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim"
+  ]
+}

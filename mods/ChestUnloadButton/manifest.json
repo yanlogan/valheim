@@ -1,0 +1,6 @@
+{
+  "name": "ChestUnloadButton",
+  "version_number": "1.3.0",
+  "description": "SC Unload UI next to Take All + dump eligible leftovers into open chest. Remove if SC Unload dropped.",
+  "dependencies": ["denikson-BepInExPack_Valheim", "Roses-SmarterContainers", "Goldenrevolver-Quick_Stack_Store_Sort_Trash_Restock"]
+}
