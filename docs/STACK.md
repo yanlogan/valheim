@@ -35,7 +35,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Обязательно — зависимости
+## ❗ Обязательно — зависимости
 
 | Имя | Folder | Thunderstore |
 |-----|--------|--------------|
@@ -48,7 +48,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Обязательно — инвентарь / крафт / wards
+## ❗ Обязательно — инвентарь / крафт / wards
 
 | Имя | Folder | Версия / заметка | Thunderstore |
 |-----|--------|------------------|--------------|
@@ -68,7 +68,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Обязательно — контент / мир
+## ❗ Обязательно — контент / мир
 
 Без этих модов — missing prefabs / нет кусков и предметов мира.
 
@@ -96,7 +96,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 ---
 
-## Обязательно — Yanlo (не Thunderstore)
+## ❗ Обязательно — Yanlo (не Thunderstore)
 
 Скачай zip с [Latest Release](https://github.com/yanlogan/valheim/releases/latest) → папки в `plugins/`:
 
