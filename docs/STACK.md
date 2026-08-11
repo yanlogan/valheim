@@ -30,7 +30,6 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | TrashItems | `virtuaCode-TrashItems` | отдельный Trash | Trash уже в QSS |
 | ShipExploration (GemHunter) | `GemHunter1-ShipExploration` | радиус карты на корабле | заменён на Yanlo-ShipExplorationAll |
 | No Build Restriction | `BlackViking-NoBuildRestriction` | снимает лимиты стройки | не используем |
-| Yanlo QSS Sort Offset | `Yanlo-QSSSortButtonOffset` | сдвиг кнопки Sort | устарел; логика в ChestUnloadButton |
 | Conditional Config Sync | `shudnal-ConditionalConfigSync` | условный sync cfg | сирота, не нужен |
 
 ---
