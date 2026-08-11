@@ -5,7 +5,7 @@ Last updated: 2026-08-11
 Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)  
 Геймплей: [HOWTO.md](HOWTO.md)
 
-В таблицах: **Имя** — что вбить в Online → поиск (copy-paste); под ним мелким шрифтом — **автор** (если несколько результатов). Версии — только где важно совпасть с хостом.
+В таблицах: **Имя** — что вбить в Online → поиск (copy-paste); под ним мелким шрифтом — **автор**. Внутри каждой таблицы — **по алфавиту**. Версии — только где важно совпасть с хостом. Подробнее про кнопки/хоткеи — [HOWTO](HOWTO.md).
 
 ---
 
@@ -25,12 +25,12 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает | Почему убрать |
 |-----|------------|---------------|
-| AzuAutoStore<br><sub>Azumatt</sub> | автоскладирование в сундуки | жрёт лут из ItemDrawers |
-| TrashItems<br><sub>virtuaCode</sub> | отдельный Trash | Trash уже в QSS |
-| ShipExploration<br><sub>GemHunter1</sub> | радиус карты на корабле | заменён на Yanlo-ShipExplorationAll |
-| NoBuildRestriction<br><sub>BlackViking</sub> | снимает лимиты стройки | не используем |
-| ConditionalConfigSync<br><sub>shudnal</sub> | условный sync cfg | сирота, не нужен |
-| TimedTorchesStayLit<br><sub>TastyChickenLegs</sub> | факелы не гаснут | только на **dedicated**; на клиенте не нужен |
+| AzuAutoStore<br><sub>Azumatt</sub> | Сам раскидывает лут из инвентаря по подходящим сундукам рядом | Вместе с ItemDrawers Take Stack может **съедать остаток** стака — у нас не используем |
+| ConditionalConfigSync<br><sub>shudnal</sub> | Условная синхронизация конфигов между клиентом и сервером | Сирота в нашем паке: никто на него не ссылается, пользы нет |
+| NoBuildRestriction<br><sub>BlackViking</sub> | Снимает ванильные лимиты стройки / зоны | Не нужен: играем с обычными лимитами |
+| ShipExploration<br><sub>GemHunter1</sub> | Увеличивает радиус открытия карты, пока ты на корабле | Заменён нашим **Yanlo-ShipExplorationAll** (ваниль + все OdinShip); два мода вместе не ставить |
+| TimedTorchesStayLit<br><sub>TastyChickenLegs</sub> | Факелы/костры на сервере не прогорают по таймеру | Живёт **только на dedicated**; на клиенте лишний |
+| TrashItems<br><sub>virtuaCode</sub> | Отдельный мод с корзиной / удалением предметов | Trash уже есть в **QSS**; второй Trash только путает |
 
 ---
 
@@ -38,12 +38,12 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| BepInExPack_Valheim<br><sub>denikson</sub> | загрузчик модов (обычно уже есть с профилем r2modman) |
-| Jotunn<br><sub>ValheimModding</sub> | библиотека для контент-модов |
-| HookGenPatcher<br><sub>ValheimModding</sub> | генерит хуки / MMHOOK |
-| YamlDotNet<br><sub>ValheimModding</sub> | YAML для модов |
-| JsonDotNET<br><sub>ValheimModding</sub> | JSON для модов |
-| MMHOOK<br><sub>—</sub> | хуки Harmony (часто появляется сам после HookGenPatcher) |
+| BepInExPack_Valheim<br><sub>denikson</sub> | Базовый загрузчик модов. Без него ничего из списка ниже не поднимется; в r2modman обычно уже стоит с профилем |
+| HookGenPatcher<br><sub>ValheimModding</sub> | При старте игры генерирует/обновляет MMHOOK — хуки, на которых сидят многие моды |
+| JsonDotNET<br><sub>ValheimModding</sub> | Библиотека JSON; нужна части модов как зависимость, сама по себе ничего в геймплее не меняет |
+| Jotunn<br><sub>ValheimModding</sub> | Фреймворк для контент-модов (предметы, куски, рецепты). Нужен PlanBuild, ImpactfulSkills, BoneAppetit и куче других |
+| MMHOOK<br><sub>—</sub> | Сгенерированные Harmony-хуки. Часто появляется сам после HookGenPatcher; вручную обычно не ищут |
+| YamlDotNet<br><sub>ValheimModding</sub> | Библиотека YAML (конфиги/данные модов). Сама UI не даёт |
 
 ---
 
@@ -51,19 +51,19 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | доп. ряды инвентаря и слоты экипа |
-| Quick_Stack_Store_Sort_Trash_Restock<br><sub>Goldenrevolver</sub> | **Sort + Trash** (stack/restock/store-all у нас выкл) |
-| SmarterContainers<br><sub>Roses</sub> | умная раскладка в сундуки + Unload (~14 м) |
-| ItemDrawers<br><sub>makail</sub> | настенный ящик на 1 тип, до 9999 шт. |
-| AzuCraftyBoxes<br><sub>Azumatt</sub> | крафт/стройка и HUD из сундуков (~50 м); версия **1.8.15**, без мода кик |
-| ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | ряды с EPI, StructuralIntegrity; CraftFromChest **off** |
-| WardIsLove<br><sub>Azumatt</sub> | Thorward + радиус на дом (GUI); версия **3.7.2**, одна у всех |
-| MultiUserChest<br><sub>MSchmoecker</sub> | несколько игроков в одном сундуке |
-| Recycle_N_Reclaim<br><sub>Azumatt</sub> | разбор у верстака / Reclaim all на сундуке |
-| Official_BepInEx_ConfigurationManager<br><sub>Azumatt</sub> | меню настроек модов на **F1** |
-| ImpactfulSkills<br><sub>MidnightMods</sub> | бонусы от скиллов + Voyager / Hauling / Animal Whisper |
-| PlanBuild<br><sub>MathiasDecrock</sub> | синие планы / Blueprint Rune / Plan Totem; версия **0.18.4** |
-| Better_Cartography_Table<br><sub>nbusseneau</sub> | шаринг пинов и эксплора у картографического стола |
+| AzuCraftyBoxes<br><sub>Azumatt</sub> | Крафт и стройка тянут ресурсы из **соседних сундуков** (у нас до ~50 м); в HUD видно «сколько есть с учётом сундуков». Без мода той же версии сервер **кикает**. Версия **1.8.15**. V+ CraftFromChest у нас выкл — иначе double-consume |
+| AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | Дополнительные ряды инвентаря и слоты экипа/быстрого доступа. Число рядов стыкуется с ValheimPlus |
+| Better_Cartography_Table<br><sub>nbusseneau</sub> | Нормальный шаринг **пинов и исследованной карты** через картографический стол. Пины по умолчанию private; public — Shift+клик у стола (см. HOWTO) |
+| ImpactfulSkills<br><sub>MidnightMods</sub> | Скиллы реально бустят дроп/удобство (рубка, майнинг, фарм, оружие, sneak/run…). Новые скиллы: **Voyager**, **Hauling**, **Animal Whisper**. Нужен у всех + на сервере |
+| ItemDrawers<br><sub>makail</sub> | Настенный ящик под **один тип** предмета, до **9999** шт. Interact / Alt / Shift — забрать стак, 1 шт. или закинуть всё того типа; с пола рядом подбирает сам |
+| MultiUserChest<br><sub>MSchmoecker</sub> | Несколько игроков могут одновременно открыть один и тот же сундук без классического «занято» |
+| Official_BepInEx_ConfigurationManager<br><sub>Azumatt</sub> | Окно настроек модов по **F1** (не заходя в файлы cfg). Удобно крутить свои хоткеи |
+| PlanBuild<br><sub>MathiasDecrock</sub> | **Plan Hammer** — синие планы построек без ресурсов; **Plan Totem** — сдача материалов рядом; **Blueprint Rune** — копировать/вставлять здания. Версия **0.18.4**. Без мода на клиенте планы не видно; с модом на клиенте сервер без PlanBuild не пустит |
+| Quick_Stack_Store_Sort_Trash_Restock<br><sub>Goldenrevolver</sub> | У нас только **Sort** (клавиша/кнопка, пакует сверху вниз) и **Trash** (корзина). Quick Stack / Restock / Store All **выключены** — иначе были пропажи лута с EPI |
+| Recycle_N_Reclaim<br><sub>Azumatt</sub> | Разбор вещей у верстака обратно в материалы; на сундуке зелёная **Reclaim all** — вернуть ресурсы из содержимого сундука себе (это не Sort/Unload) |
+| SmarterContainers<br><sub>Roses</sub> | Умная раскладка по сундукам (Ctrl+клик и группы) + логика **Unload**: eligible-лут в соседние релевантные сундуки в радиусе ~**14 м**. Кнопку Unload рисует Yanlo |
+| ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | Пачка QoL/серверных флагов. У нас важны ряды инвентаря с EPI и **StructuralIntegrity** (здания/лодки крепче). **CraftFromChest = false** — крафт из сундуков только через CraftyBoxes |
+| WardIsLove<br><sub>Azumatt</sub> | Вместо ванильного ward — **Thorward** с GUI: свой радиус на дом, ACL для CraftyBoxes. Версия **3.7.2** у всех одинаковая. Свой ward на своём доме (см. Дополнительно) |
 
 ---
 
@@ -73,25 +73,25 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| PlantEverything<br><sub>Advize</sub> | больше растений / семян / выращивания |
-| Seasonality<br><sub>RustyMods</sub> | сезоны (погода, окружение) |
-| BoneAppetit<br><sub>RockerKitten</sub> | новая еда и станции готовки |
-| HoneyPlus<br><sub>OhhLoz</sub> | расширенный мёд / ульи |
-| Valharvest<br><sub>Frenvius</sub> | доп. фермерский контент |
-| OdinShip<br><sub>Marlthon</sub> | доп. корабли (War/Cargo/…) |
-| OdinHorse<br><sub>OdinPlus</sub> | лошади / ездовые |
-| OdinsHorsePen<br><sub>OdinPlus</sub> | загон для лошадей |
-| OdinCampsite<br><sub>OdinPlus</sub> | кемп / походный контент |
-| PlantIt<br><sub>OdinPlus</sub> | доп. посадка / растения |
-| Atos_Arrows_JVL<br><sub>Digitalroot</sub> | доп. стрелы |
-| BetterArchery<br><sub>ishid4</sub> | улучшения лука / стрельбы |
-| InfinityTools<br><sub>Numenos</sub> | инструменты без поломки (наш сетап) |
-| Clutter<br><sub>plumga</sub> | декоративные куски / clutter |
-| MoreGatesExtended<br><sub>shudnal</sub> | доп. ворота / двери |
-| XPortal<br><sub>SpikeHimself</sub> | порталы между базами |
-| TreesReborn<br><sub>TastyChickenLegs</sub> | другие/улучшенные деревья |
-| Venture_Terrain_Reset<br><sub>VentureValheim</sub> | сброс/правка террейна |
-| InstantMonsterLootDrop<br><sub>cjayride</sub> | лут с мобов сразу на землю |
+| Atos_Arrows_JVL<br><sub>Digitalroot</sub> | Набор дополнительных типов стрел (урон/эффекты). Без мода стрелы с сервера будут «розовыми»/пропадут |
+| BetterArchery<br><sub>ishid4</sub> | Улучшения лука и стрельбы (прицел, поведение лука — по настройкам мода) |
+| BoneAppetit<br><sub>RockerKitten</sub> | Новые блюда, ингредиенты и станции готовки. Контент: без мода рецептов/префабов нет |
+| Clutter<br><sub>plumga</sub> | Куча декоративных build-кусков (мелочёвка для базы) |
+| HoneyPlus<br><sub>OhhLoz</sub> | Расширенная система мёда/ульев (больше вариантов, чем ваниль) |
+| InfinityTools<br><sub>Numenos</sub> | Инструменты не ломаются (в нашем сетапе так удобнее фармить/строить) |
+| InstantMonsterLootDrop<br><sub>cjayride</sub> | Лут с убитых мобов сразу падает на землю, не нужно обыскивать труп |
+| MoreGatesExtended<br><sub>shudnal</sub> | Дополнительные ворота, двери и похожие проёмы для баз |
+| OdinCampsite<br><sub>OdinPlus</sub> | Походный/кемп-контент (палатки и связанное из пакета OdinPlus) |
+| OdinHorse<br><sub>OdinPlus</sub> | Лошади / ездовые существа OdinPlus |
+| OdinsHorsePen<br><sub>OdinPlus</sub> | Загон и постройки под лошадей |
+| OdinShip<br><sub>Marlthon</sub> | Новые корабли (War, Cargo, Merchant, каноэ и т.д.). Yanlo-ShipExplorationAll как раз учитывает их |
+| PlantEverything<br><sub>Advize</sub> | Сильно расширяет список того, что можно сажать/выращивать (кусты, грибы, цветы и т.п.) |
+| PlantIt<br><sub>OdinPlus</sub> | **Контент:** декоративные растения, ставишь специальной лопатой. Это не сетка-ферма — для фермы сеткой есть optional PlantEasily |
+| Seasonality<br><sub>RustyMods</sub> | Сезоны: меняется окружение/погода по циклу. Часто в паре с HD-текстурами (optional Willybach) |
+| TreesReborn<br><sub>TastyChickenLegs</sub> | Другие модели/поведение деревьев (визуал и валка отличаются от ванили) |
+| Valharvest<br><sub>Frenvius</sub> | Доп. фермерский контент (культуры/связанные предметы) |
+| Venture_Terrain_Reset<br><sub>VentureValheim</sub> | Инструменты сброса/правки террейна (выровнять испорченную землю и т.п.) |
+| XPortal<br><sub>SpikeHimself</sub> | Именованные порталы между базами (удобный fast-travel по своим точкам) |
 
 ---
 
@@ -101,8 +101,8 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя (папка) | Версия | Что делает |
 |-------------|--------|------------|
-| Yanlo-ChestUnloadButton<br><sub>Yanlo</sub> | **1.3.0** | кнопка **Unload под** Take All; leftovers → открытый сундук (нужны QSS + SC Unload) |
-| Yanlo-ShipExplorationAll<br><sub>Yanlo</sub> | **1.1.0** | больший радиус карты на ванили + OdinShip; не ставить GemHunter ShipExploration |
+| Yanlo-ChestUnloadButton<br><sub>Yanlo</sub> | **1.3.0** | Рисует кнопку **Unload под** Take All (чтобы не перекрывать длинные имена сундуков). После раскладки SC то, что не нашло соседний сундук из eligible-групп, кидает в **открытый** сундук. Нужны QSS + SC Unload; без них папку удали |
+| Yanlo-ShipExplorationAll<br><sub>Yanlo</sub> | **1.1.0** | Больший радиус тумана карты на Raft/Karve/Longship **и** на кораблях OdinShip 0.7.6. Заменяет GemHunter ShipExploration — его не ставить рядом |
 
 ---
 
@@ -110,21 +110,21 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| AAA_Crafting<br><sub>Azumatt</sub> | удобный UI крафта + Recipe Tracker |
-| ItemCompare<br><sub>Azumatt</sub> | сравнение статов предметов в UI |
-| VNEI<br><sub>MSchmoecker</sub> | поиск предметов и рецептов |
-| CraftGuard<br><sub>jg224</sub> | вкладки Hammer Default/Mod View (`OrganizeRecipes=false` с AAA) |
-| BetterSounds<br><sub>Wiandar</sub> | замена SFX (**male**); после Install распаковать `CustomAudio.zip`; не вместе с Female |
-| Expand_World_Music<br><sub>JereKuusela</sub> | движок кастомной музыки (нужен для Forteca) |
-| Forteca_Soundtrack<br><sub>BlackViking</sub> | треки Forteca в меню через EWM |
-| PlantEasily<br><sub>Advize</sub> | удобная посадка/сбор |
-| QuickTeleport<br><sub>OdinPlus</sub> | быстрый телепорт по хоткею |
-| FenceSnap<br><sub>MSchmoecker</sub> | snap заборов при стройке |
-| Willybachs_HD_Seasonality<br><sub>Willybach</sub> | HD-текстуры сезонов |
-| MyLittleUI<br><sub>shudnal</sub> | мелкие UI-удобства |
-| ImprovedBuildHud<br><sub>RandyKnapp</sub> | удобнее HUD стройки |
-| BetterAutoRun<br><sub>nearbear</sub> | улучшенный autorun |
-| AutoMapPins<br><sub>abfielder</sub> | автопины на карте |
+| AAA_Crafting<br><sub>Azumatt</sub> | Удобнее окно крафта + **Recipe Tracker** (пин рецепта на экран: сколько материалов не хватает). Хост: компактная панель, toggle часто PageUp |
+| AutoMapPins<br><sub>abfielder</sub> | Сам ставит пины на карте по интересным местам/ресурсам (меньше ручной разметки) |
+| BetterAutoRun<br><sub>nearbear</sub> | Удобнее autorun: меньше случайных сбросов бега, чем в ванили |
+| BetterSounds<br><sub>Wiandar</sub> | Замена SFX/амбиента (**male**-пакет). После Install нужно распаковать `CustomAudio.zip` в папку мода. Не ставить вместе с Female |
+| CraftGuard<br><sub>jg224</sub> | В молотке режимы Default / **Mod View** — куски модов по категориям. Организацию станций крафта у нас выкл (`OrganizeRecipes=false`), чтобы не драться с AAA |
+| Expand_World_Music<br><sub>JereKuusela</sub> | Движок кастомной музыки (меню/мир). Нужен, если ставишь Forteca |
+| FenceSnap<br><sub>MSchmoecker</sub> | Заборы и похожие куски «прилипают» ровно при стройке |
+| Forteca_Soundtrack<br><sub>BlackViking</sub> | Треки Forteca в главном меню через Expand World Music |
+| ImprovedBuildHud<br><sub>RandyKnapp</sub> | Понятнее HUD при стройке (что можно поставить / требования) |
+| ItemCompare<br><sub>Azumatt</sub> | В UI сравнения видно статы двух предметов рядом |
+| MyLittleUI<br><sub>shudnal</sub> | Набор мелких UI-удобств (читаемость/компактность интерфейса) |
+| PlantEasily<br><sub>Advize</sub> | **QoL фермы:** сажать сеткой (ряды/столбцы), snap, массовый сбор, опционально auto-replant. Работает с ванилью и PlantEverything. Не добавляет новые префабы — для декора лопатой см. PlantIt |
+| QuickTeleport<br><sub>OdinPlus</sub> | Быстрый телепорт по хоткею на сохранённые точки (client-only) |
+| VNEI<br><sub>MSchmoecker</sub> | Отдельное окно: поиск предметов, рецептов, где крафтится / что дропает |
+| Willybachs_HD_Seasonality<br><sub>Willybach</sub> | HD-текстуры под Seasonality (красивее сезоны). Тяжёлые ассеты, только клиент |
 
 ---
 
