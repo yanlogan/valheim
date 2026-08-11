@@ -7,9 +7,11 @@
 - Release + Yanlo zip: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-11
 
 What's Changed:
-Added: базовый стек (STACK) + Yanlo-ChestUnloadButton 1.3.0 + ShipExplorationAll 1.1.0; свой Thorward на доме
+Added (обязательно): AzuCraftyBoxes, AzuEPI, Better_Cartography_Table, ImpactfulSkills, ItemDrawers, MUC, ConfigManager, PlanBuild, QSS, Recycle, SmarterContainers, ValheimPlus, WardIsLove + полный контент (BoneAppetit, OdinShip, PlantEverything, Seasonality, XPortal, … — см. STACK)
+Yanlo: ChestUnloadButton 1.3.0 + ShipExplorationAll 1.1.0; свой Thorward на доме
+По желанию: AAA_Crafting, VNEI, ItemCompare, CraftGuard, BetterSounds, EWM+Forteca, …
 Removed: GemHunter ShipExploration, NoBuildRestriction, QSSSortButtonOffset; не ставить AutoStore/TrashItems
-Config: готовые cfg/ или ключи в STACK → Конфиги (CraftyBoxes 50 / SC 14 / V+ CraftFromChest off / QSS Sort+Trash)
-Yanlo: zip с Release → plugins/Yanlo-*
+Config: cfg/ или STACK → Конфиги
+Yanlo zip: Release → plugins/Yanlo-*
 
 Как юзать: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
