@@ -55,17 +55,17 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Имя | Что делает |
 |-----|------------|
 | AzuCraftyBoxes<br><sub>Azumatt</sub> | Крафт/стройка и счётчики HUD из соседних сундуков (~50 м). Версия **1.8.15**; без мода сервер кикает. V+ CraftFromChest выкл |
-| AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | Доп. ряды инвентаря и слоты экипа (стыкуется с ValheimPlus) |
+| AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | Доп. ряды инвентаря и слоты экипа |
 | Better_Cartography_Table<br><sub>nbusseneau</sub> | Шаринг пинов и эксплора через картографический стол; public — Shift+клик у стола ([HOWTO](HOWTO.md#карта-и-корабли)) |
-| ImpactfulSkills<br><sub>MidnightMods</sub> | Бонусы от скиллов + **Voyager** / **Hauling** / **Animal Whisper**. Нужен у всех + на сервере |
+| ImpactfulSkills<br><sub>MidnightMods</sub> | Бонусы от скиллов + **Voyager** / **Hauling** / **Animal Whisper** |
 | ItemDrawers<br><sub>makail</sub> | Настенный ящик на 1 тип, до **9999**; E / Alt+E / Shift+E, подбор с пола ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
 | MultiUserChest<br><sub>MSchmoecker</sub> | Несколько игроков открывают один сундук одновременно |
 | Official_BepInEx_ConfigurationManager<br><sub>Azumatt</sub> | Настройки модов по **F1** |
-| PlanBuild<br><sub>MathiasDecrock</sub> | Plan Hammer / Plan Totem / Blueprint Rune — планы и копирование построек. Версия **0.18.4** ([HOWTO](HOWTO.md#крафт-и-стройка)) |
+| PlanBuild<br><sub>MathiasDecrock</sub> | Plan Hammer / Plan Totem / Blueprint Rune — планы и копирование построек ([HOWTO](HOWTO.md#крафт-и-стройка)) |
 | Quick_Stack_Store_Sort_Trash_Restock<br><sub>Goldenrevolver</sub> | Только **Sort** (сверху вниз) и **Trash**; stack/restock/store-all выкл ([HOWTO](HOWTO.md#инвентарь-и-сундуки), [Конфиги](#конфиги)) |
 | Recycle_N_Reclaim<br><sub>Azumatt</sub> | Разбор у верстака; **Reclaim all** на сундуке возвращает материалы в игрока |
 | SmarterContainers<br><sub>Roses</sub> | Умная раскладка + Unload в соседние сундуки (~14 м). Кнопка Unload — [Yanlo-ChestUnloadButton](#yanlo) |
-| ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | Ряды инвентаря с EPI + **StructuralIntegrity**. **CraftFromChest = false** (крафт из сундуков через CraftyBoxes) |
+| ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | Большой QoL-пак: доп. настройки инвентаря, зданий, лодок и куча мелких правок ванили (наш профиль — в [Конфиги](#конфиги)) |
 | WardIsLove<br><sub>Azumatt</sub> | **Thorward** + радиус на дом в GUI; версия **3.7.2**. Свой ward на доме ([Дополнительно](#дополнительно), [HOWTO](HOWTO.md#крафт-и-стройка)) |
 
 ---
@@ -77,7 +77,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| Atos_Arrows_JVL<br><sub>Digitalroot</sub> | Доп. типы стрел; без мода — missing prefabs |
+| Atos_Arrows_JVL<br><sub>Digitalroot</sub> | Доп. типы стрел |
 | BetterArchery<br><sub>ishid4</sub> | Улучшения лука и стрельбы |
 | BoneAppetit<br><sub>RockerKitten</sub> | Новые блюда, ингредиенты и станции готовки |
 | Clutter<br><sub>plumga</sub> | Декоративные build-куски |
@@ -92,10 +92,10 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | PlantEverything<br><sub>Advize</sub> | Больше растений/кустов/грибов для выращивания |
 | PlantIt<br><sub>OdinPlus</sub> | Декор-растения лопатой (не сетка-ферма; сетка — [PlantEasily](#по-желанию)) |
 | Seasonality<br><sub>RustyMods</sub> | Сезоны (окружение/погода); HD — optional Willybach |
-| TreesReborn<br><sub>TastyChickenLegs</sub> | Другие модели деревьев |
-| Valharvest<br><sub>Frenvius</sub> | Доп. фермерский контент |
+| TreesReborn<br><sub>TastyChickenLegs</sub> | Срубленные деревья отрастают заново |
+| Valharvest<br><sub>Frenvius</sub> | Новые овощи и рецепты |
 | Venture_Terrain_Reset<br><sub>VentureValheim</sub> | Сброс/правка террейна |
-| XPortal<br><sub>SpikeHimself</sub> | Именованные порталы между базами |
+| XPortal<br><sub>SpikeHimself</sub> | Один портал с выпадающим меню вместо кучи отдельных порталов |
 
 ---
 
@@ -120,15 +120,15 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | AutoMapPins<br><sub>abfielder</sub> | Автопины на карте по ресурсам/местам |
 | BetterAutoRun<br><sub>nearbear</sub> | Улучшенный autorun |
 | BetterSounds<br><sub>Wiandar</sub> | Замена SFX (**male**); после Install — `CustomAudio.zip`; не вместе с Female |
-| CraftGuard<br><sub>jg224</sub> | Hammer Default / Mod View; `OrganizeRecipes=false` с AAA |
+| CraftGuard<br><sub>jg224</sub> | Удобная сетка кусков в молотке по назначению (`OrganizeRecipes=false` с AAA) |
 | Expand_World_Music<br><sub>JereKuusela</sub> | Движок кастомной музыки; нужен для Forteca |
 | FenceSnap<br><sub>MSchmoecker</sub> | Snap заборов при стройке |
 | Forteca_Soundtrack<br><sub>BlackViking</sub> | Треки Forteca в меню (через EWM) |
-| ImprovedBuildHud<br><sub>RandyKnapp</sub> | Удобнее HUD стройки |
+| ImprovedBuildHud<br><sub>RandyKnapp</sub> | В требованиях куска — сколько материала у тебя и сколько раз можно построить |
 | ItemCompare<br><sub>Azumatt</sub> | Сравнение статов двух предметов |
-| MyLittleUI<br><sub>shudnal</sub> | Мелкие UI-удобства |
+| MyLittleUI<br><sub>shudnal</sub> | Пачка UI-мелочей: таймеры станций, имена сундуков, баффы, прогноз погоды и т.п. |
 | PlantEasily<br><sub>Advize</sub> | Посадка/сбор сеткой, snap, auto-replant. Декор лопатой — [PlantIt](#контент) |
-| QuickTeleport<br><sub>OdinPlus</sub> | Телепорт по хоткею на сохранённые точки |
+| QuickTeleport<br><sub>OdinPlus</sub> | Короче время телепорта (ванильный каст быстрее) |
 | VNEI<br><sub>MSchmoecker</sub> | Поиск предметов и рецептов |
 | Willybachs_HD_Seasonality<br><sub>Willybach</sub> | HD-текстуры для Seasonality |
 
