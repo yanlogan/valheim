@@ -7,8 +7,6 @@ Baseline Yanlo zip уже здесь. Цикл **ещё open** (не все др
 - [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md)
 - [Готовые cfg](https://github.com/yanlogan/valheim/tree/main/cfg) · или ключи ниже / в [STACK → Конфиги](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#конфиги)
 
-**Yanlo:** распакуй `YanloMods-cycle-2026-08-11.zip` → `BepInEx/plugins/` (папки `Yanlo-*`).
-
 ## Что изменилось
 
 ### Добавлено
@@ -19,6 +17,9 @@ Baseline Yanlo zip уже здесь. Цикл **ещё open** (не все др
 - **MultiUserChest** <sub>от MSchmoecker</sub>
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
+
+**Yanlo** — распакуй [`YanloMods-cycle-2026-08-11.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-11/YanloMods-cycle-2026-08-11.zip) → `BepInEx/plugins/` (папки `Yanlo-*`):
+
 - **Yanlo-ChestUnloadButton** <sub>от Yanlo</sub>
 - **Yanlo-ShipExplorationAll** **1.1.0** <sub>от Yanlo</sub>
 
