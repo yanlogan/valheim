@@ -1,14 +1,14 @@
 # Friends cycle — PENDING (template)
 
 Status: **open** · started: **YYYY-MM-DD**  
-Стек: [`docs/STACK.md`](../docs/STACK.md) · HOWTO: [`docs/HOWTO.md`](../docs/HOWTO.md)
+Стек: [`docs/STACK.md`](../docs/STACK.md) · HOWTO: [`docs/HOWTO.md`](../docs/HOWTO.md) · cfg: [`cfg/`](../cfg/)
 
 ## Ссылки
 
-- **Full notes:** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
+- **Дельта:** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
 - **Release:** _(после синка)_ https://github.com/yanlogan/valheim/releases/latest
 - **Yanlo zip:** asset на Release
-- **Стек / HOWTO:** https://github.com/yanlogan/valheim/blob/main/docs/STACK.md
+- **Стек / HOWTO / cfg:** https://github.com/yanlogan/valheim/blob/main/docs/STACK.md
 
 ---
 
@@ -24,7 +24,7 @@ Status: **open** · started: **YYYY-MM-DD**
 
 ### Config
 
-- _(нет)_
+- _(нет — или 1 строка дельты + ссылка на STACK `#конфиги` / `cfg/`; без paste ini)_
 
 ### Yanlo
 
@@ -38,4 +38,5 @@ Status: **open** · started: **YYYY-MM-DD**
 
 ## Закрытие цикла
 
-→ `YYYY-MM-DD_slug.md` → `release.ps1` → новый PENDING
+→ `YYYY-MM-DD_slug.md` → `release.ps1` → новый PENDING  
+(пока не все друзья забрали — цикл не закрывать; при необходимости `gh release edit` slim notes)
