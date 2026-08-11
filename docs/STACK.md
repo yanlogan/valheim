@@ -54,7 +54,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 | Имя | Что делает |
 |-----|------------|
-| AzuCraftyBoxes<br><sub>Azumatt</sub> | Крафт/стройка и счётчики HUD из соседних сундуков (~50 м). Версия **1.8.15**; без мода сервер кикает. V+ CraftFromChest выкл |
+| AzuCraftyBoxes<br><sub>Azumatt</sub> | Крафт/стройка и счётчики HUD из соседних сундуков (~50 м). V+ CraftFromChest выкл |
 | AzuExtendedPlayerInventory<br><sub>Azumatt</sub> | Доп. ряды инвентаря и слоты экипа |
 | Better_Cartography_Table<br><sub>nbusseneau</sub> | Шаринг пинов и эксплора через картографический стол; public — Shift+клик у стола ([HOWTO](HOWTO.md#карта-и-корабли)) |
 | ImpactfulSkills<br><sub>MidnightMods</sub> | Бонусы от скиллов + **Voyager** / **Hauling** / **Animal Whisper** |
@@ -66,7 +66,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Recycle_N_Reclaim<br><sub>Azumatt</sub> | Разбор у верстака; **Reclaim all** на сундуке возвращает материалы в игрока |
 | SmarterContainers<br><sub>Roses</sub> | Умная раскладка + Unload в соседние сундуки (~14 м). Кнопка Unload — [Yanlo-ChestUnloadButton](#yanlo) |
 | ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | Большой QoL-пак: доп. настройки инвентаря, зданий, лодок и куча мелких правок ванили (наш профиль — в [Конфиги](#конфиги)) |
-| WardIsLove<br><sub>Azumatt</sub> | **Thorward** + радиус на дом в GUI; версия **3.7.2**. Свой ward на доме ([Дополнительно](#дополнительно), [HOWTO](HOWTO.md#крафт-и-стройка)) |
+| WardIsLove<br><sub>Azumatt</sub> | **Thorward** + радиус на дом в GUI. Свой ward на доме ([Дополнительно](#дополнительно), [HOWTO](HOWTO.md#крафт-и-стройка)) |
 
 ---
 
