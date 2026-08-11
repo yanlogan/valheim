@@ -12,7 +12,9 @@ $Files = @(
     "goldenrevolver.quick_stack_store.cfg",
     "flueno.SmartContainers.cfg",
     "Azumatt.AzuCraftyBoxes.cfg",
-    "valheim_plus.cfg"
+    "valheim_plus.cfg",
+    "Azumatt.AzuAntiArthriticCrafting.cfg",
+    "com.inventoryux.valheim.cfg"
 )
 
 if (-not (Test-Path $SrcDir)) {

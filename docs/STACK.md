@@ -174,6 +174,18 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
+
+; Azumatt.AzuAntiArthriticCrafting.cfg  (AAA_Crafting — если ставишь)
+[5 - Recipe Tracker (Position)]
+Recipe Tracker Position = {"x":200.0,"y":200.0}
+[5 - Recipe Tracker (Sizes)]
+Recipe Tracker Panel Scale = {"x":0.5,"y":0.5}
+Recipe Tracker Req Name Max = 15
+
+; com.inventoryux.valheim.cfg  (CraftGuard — если ставишь с AAA)
+[CraftingUI]
+OrganizeRecipes = false
+; Hammer OrganizeCrafting / OrganizeBuilding / OrganizeHeavyBuilding / OrganizeFurniture = true
 ```
 
 ---

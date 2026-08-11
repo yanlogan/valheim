@@ -11,6 +11,6 @@
 Yanlo: zip YanloMods-cycle-2026-08-11.zip → BepInEx/plugins/ — ChestUnloadButton, ShipExplorationAll 1.1.0
 По желанию: AAA_Crafting, BetterSounds, CraftGuard, Expand_World_Music, Forteca_Soundtrack, VNEI
 Удалено: GemHunter ShipExploration, NoBuildRestriction
-Конфиг: cfg/ или ключи в PENDING / STACK
+Конфиг: cfg/ или ключи в PENDING/STACK (QSS/SC/CraftyBoxes/V+ + AAA Recipe Tracker layout + CraftGuard OrganizeRecipes=false)
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

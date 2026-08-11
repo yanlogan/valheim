@@ -10,5 +10,7 @@
 | `flueno.SmartContainers.cfg` | SmarterContainers |
 | `Azumatt.AzuCraftyBoxes.cfg` | AzuCraftyBoxes |
 | `valheim_plus.cfg` | ValheimPlus |
+| `Azumatt.AzuAntiArthriticCrafting.cfg` | AAA_Crafting (optional) |
+| `com.inventoryux.valheim.cfg` | CraftGuard / InventoryUX (optional) |
 
 Перезапишет **все** настройки этого мода у тебя (включая бинды из файла). Если свои бинды/мелочи надо сохранить — правь только ключи из [STACK → Конфиги](../docs/STACK.md#конфиги).
