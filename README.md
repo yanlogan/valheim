@@ -1,65 +1,44 @@
-# yanlo-valheim
+# Valheim — модпак нашего сервера
 
-Свои Valheim-моды (**Yanlo-***) + friends-циклы (полные MD + GitHub Releases).
+Инструкции и список модов для игры у нас: что поставить в **r2modman**, какие настройки важны, как пользоваться. Кастомные плагины **Yanlo-*** — в [Releases](https://github.com/yanlogan/valheim/releases/latest).
 
-Репо: [github.com/yanlogan/valheim](https://github.com/yanlogan/valheim) · [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
+**[Latest Release](https://github.com/yanlogan/valheim/releases/latest)** · **[Стек модов](docs/STACK.md)** · **[Как играть](docs/HOWTO.md)** · **[Что изменилось](docs/CHANGES.md)**
 
-`BepInEx/plugins` — только install target (копия скриптом). Не git. Не junction.
+---
 
-## Друзьям
+## Быстрый старт
 
-1. Открой [Latest Release](https://github.com/yanlogan/valheim/releases/latest) → **What's Changed**.
-2. Поставь/выключи моды по [`CLIENT_STACK.md`](CLIENT_STACK.md) (r2modman).
-3. Скачай `YanloMods-cycle-….zip` → папки `Yanlo-*` в Client `plugins/`.
-4. Полный changelog цикла — ссылка в Discord-брифе / файл в [`changelogs/`](changelogs/).
+1. Поставь [r2modman](https://thunderstore.io/package/ebkr/r2modman/) → игра **Valheim** → свой профиль.
+2. По [`docs/STACK.md`](docs/STACK.md): поставь всё из **Required**, удали/выключи **Must remove**. Контент-моды — по полному списку (иначе missing prefabs).
+3. Скачай **`YanloMods-….zip`** с [Latest Release](https://github.com/yanlogan/valheim/releases/latest) → распакуй папки `Yanlo-*` в  
+   `%AppData%\r2modmanPlus-local\Valheim\profiles\<твой_профиль>\BepInEx\plugins\`.
+4. Выставь **shared cfg** из [STACK → Shared cfg](docs/STACK.md#shared-cfg-без-хоткеев) (только указанные ключи; **свои хоткеи не затирай**).
+5. Глянь [HOWTO](docs/HOWTO.md) и [последние изменения](docs/CHANGES.md) / Discord от хоста.
 
-Полный r2modman export профиля сюда **не** кладём (~1 ГБ). Чужое — с Thunderstore по списку.
+Чужие моды — только через r2modman (Thunderstore). Полный export профиля (~1 ГБ) сюда не кладём.
 
-## Структура
+---
 
-| Путь | Что |
-|------|-----|
-| `mods/` | исходники Yanlo |
-| `mods/_archived/` | устаревшие |
-| `dist/` | сборка (gitignore) |
-| `CLIENT_STACK.md` | актуальный клиентский стек + геймплей |
-| `changelogs/PENDING.md` | текущий цикл (полный MD) |
-| `changelogs/PENDING_DISCORD.md` | короткий Discord paste |
-| `changelogs/YYYY-MM-DD_slug.md` | закрытые циклы (= тело Release notes) |
-| `scripts/build.ps1` | → `dist/Yanlo-*` |
-| `scripts/install-client.ps1` | `dist/` → твой `Valheim_Client/plugins` |
-| `scripts/release.ps1` | zip + `gh release create cycle-DATE` |
+## Требования
 
-## Два слоя версий
+- Valheim (Steam)
+- r2modman (или совместимый менеджер)
+- Windows (пути ниже — `%AppData%\…`)
 
-- **Semver мода** — `mods/*/manifest.json` (`ChestUnloadButton@1.3.0`)
-- **Цикл друзей** — GitHub Release `cycle-YYYY-MM-DD` + файл в `changelogs/`
+---
 
-## Workflow хоста
+## FAQ
 
-```text
-правки → build.ps1 → install-client.ps1 → тест
-→ дописать PENDING.md + PENDING_DISCORD.md + CLIENT_STACK.md
-→ «синк с друзьями»:
-    PENDING.md → changelogs/YYYY-MM-DD_slug.md
-    release.ps1 -Tag cycle-YYYY-MM-DD -NotesFile changelogs/YYYY-MM-DD_slug.md
-    новый пустой PENDING
-→ Discord: PENDING_DISCORD (+ ссылки на Release и полный MD)
-```
+| Симптом | Что проверить |
+|---------|----------------|
+| Кик / «mod mismatch» | Нет **AzuCraftyBoxes** / **PlanBuild** / **WardIsLove** той же версии, что у хоста |
+| Missing prefab / розовый куб | Нет контент-мода из [STACK](docs/STACK.md) (PlantEverything, OdinShip, BoneAppetit, …) |
+| Нет кнопки Unload / карта на лодке как ваниль | Не распакован **Yanlo** zip в `plugins/` |
+| Sort пакует снизу вверх | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**) |
+| Крафт жрёт ресурсы дважды | V+ `CraftFromChest` должен быть **false** при CraftyBoxes |
 
-Чужие моды: r2modman на Client; нужные на dedicated — **руками** в  
-`…\Valheim dedicated server\BepInEx\plugins`.
+---
 
-## Build / install / release
+## Для хоста / разработка
 
-Нужны: Valheim + профиль `Valheim_Client` (HintPath в `.csproj`), [GitHub CLI](https://cli.github.com/) для release.
-
-```powershell
-.\scripts\build.ps1
-.\scripts\install-client.ps1
-.\scripts\release.ps1 -Tag cycle-2026-08-11 -NotesFile .\changelogs\2026-08-11_slug.md
-```
-
-## Не в git
-
-`dist/`, `bin/`, `obj/`, third-party DLL, Client profile, миры, секреты.
+Сборка Yanlo, `install-client`, релизы циклов: **[`docs/HOST.md`](docs/HOST.md)**.

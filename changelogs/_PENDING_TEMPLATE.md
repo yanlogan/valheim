@@ -1,15 +1,14 @@
 # Friends cycle — PENDING (template)
 
 Status: **open** · started: **YYYY-MM-DD**  
-Профиль r2modman: **`Valheim_Client`**  
-Discord: [`PENDING_DISCORD.md`](PENDING_DISCORD.md) · стек: [`CLIENT_STACK.md`](../CLIENT_STACK.md)
+Стек: [`docs/STACK.md`](../docs/STACK.md) · HOWTO: [`docs/HOWTO.md`](../docs/HOWTO.md)
 
 ## Ссылки
 
 - **Full notes:** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
 - **Release:** _(после синка)_ https://github.com/yanlogan/valheim/releases/latest
 - **Yanlo zip:** asset на Release
-- **Client stack:** https://github.com/yanlogan/valheim/blob/main/CLIENT_STACK.md
+- **Стек / HOWTO:** https://github.com/yanlogan/valheim/blob/main/docs/STACK.md
 
 ---
 
@@ -29,22 +28,14 @@ Discord: [`PENDING_DISCORD.md`](PENDING_DISCORD.md) · стек: [`CLIENT_STACK.
 
 ### Yanlo
 
-- без изменений DLL / или версии после bump
+- без изменений DLL / или новые версии
+
+### UX
+
+- _(нет — см. HOWTO)_ / кратко + ссылка на HOWTO если новое
 
 ---
 
-## Важные изменения (детали)
-
-_(буллеты)_
-
-## По желанию
-
-_(или «нет»)_
-
-## Как пользоваться
-
-_(нет — UX не менялся)_ / буллеты
-
 ## Закрытие цикла
 
-→ `YYYY-MM-DD_slug.md` → `.\scripts\release.ps1 -Tag cycle-YYYY-MM-DD -NotesFile …` → новый PENDING
+→ `YYYY-MM-DD_slug.md` → `release.ps1` → новый PENDING
