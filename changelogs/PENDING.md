@@ -43,6 +43,7 @@ ChestUnload / ShipExploration в zip **без изменений** (как в 08
 
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
+- **Asocial_Cartography** — Disable/Uninstall (вместо него Better_Cartography_Table)
 
 ### Конфиг
 

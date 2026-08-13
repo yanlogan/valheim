@@ -36,6 +36,7 @@ Baseline Yanlo zip уже здесь. Цикл **ещё open** (не все др
 
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
+- **Asocial_Cartography** — Disable/Uninstall (вместо него Better_Cartography_Table)
 
 ### Конфиг
 
