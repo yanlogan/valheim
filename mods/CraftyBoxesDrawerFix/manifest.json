@@ -1,0 +1,10 @@
+{
+  "name": "CraftyBoxesDrawerFix",
+  "version_number": "1.1.3",
+  "description": "Fix CraftyBoxes drawers + AAA Max. Perf: one aggregated drawer container, craft-UI-gated AAA scan.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim",
+    "Azumatt-AzuCraftyBoxes",
+    "makail-ItemDrawers"
+  ]
+}

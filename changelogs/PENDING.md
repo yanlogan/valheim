@@ -6,7 +6,7 @@ Status: **open** · started: **2026-08-09**
 ## Ссылки
 
 - **Дельта (этот файл):** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
-- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-11
+- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-13
 - **Стек / HOWTO / cfg:** [STACK](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md) · [HOWTO](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md) · [cfg/](https://github.com/yanlogan/valheim/tree/main/cfg)
 
 > Baseline zip уже на Release; цикл **open**, пока не все друзья забрали апдейт. Полный стек — в STACK; здесь дельта для друзей.
@@ -24,9 +24,10 @@ Status: **open** · started: **2026-08-09**
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
 
-**Yanlo** — распакуй [`YanloMods-cycle-2026-08-11.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-11/YanloMods-cycle-2026-08-11.zip) → `BepInEx/plugins/` (папки `Yanlo-*`):
+**Yanlo** — распакуй [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (папки `Yanlo-*`):
 
 - **Yanlo-ChestUnloadButton** <sub>от Yanlo</sub>
+- **Yanlo-CraftyBoxesDrawerFix** **1.1.3** <sub>от Yanlo</sub> — drawers в крафте/AAA Max (нужен AzuCraftyBoxes)
 - **Yanlo-ShipExplorationAll** **1.1.0** <sub>от Yanlo</sub>
 
 **По желанию**
@@ -85,7 +86,7 @@ enabled = true
 Recipe Tracker Position = {"x":200.0,"y":200.0}
 [5 - Recipe Tracker (Sizes)]
 Recipe Tracker Panel Scale = {"x":0.5,"y":0.5}
-Recipe Tracker Req Name Max = 15
+Recipe Tracker Item Name Max = 15
 
 ; com.inventoryux.valheim.cfg  (CraftGuard — если ставишь с AAA)
 [CraftingUI]
