@@ -24,11 +24,11 @@ Status: **open** · started: **2026-08-09**
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
 
-**Yanlo** — распакуй [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (папки `Yanlo-*`):
+**Yanlo** — zip [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе только:**
 
-- **Yanlo-ChestUnloadButton** <sub>от Yanlo</sub>
 - **Yanlo-CraftyBoxesDrawerFix** **1.1.3** <sub>от Yanlo</sub> — drawers в крафте/AAA Max (нужен AzuCraftyBoxes)
-- **Yanlo-ShipExplorationAll** **1.1.0** <sub>от Yanlo</sub>
+
+ChestUnload / ShipExploration в zip **без изменений** (как в 08-11).
 
 **По желанию**
 
