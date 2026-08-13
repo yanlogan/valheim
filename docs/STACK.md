@@ -31,8 +31,10 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | ConditionalConfigSync<br><sub>shudnal</sub> | Условный sync конфигов клиент↔сервер | Сирота, не используется |
 | NoBuildRestriction<br><sub>BlackViking</sub> | Снимает ванильные лимиты стройки | Не используем |
 | ShipExploration<br><sub>GemHunter1</sub> | Больший радиус карты на корабле | Заменён [Yanlo-ShipExplorationAll](#yanlo); вместе не ставить |
-| TimedTorchesStayLit<br><sub>TastyChickenLegs</sub> | Факелы/костры не прогорают по таймеру | Только на **dedicated** |
+| TimedTorchesStayLit<br><sub>TastyChickenLegs</sub> | Факелы/костры не прогорают по таймеру | Только на **dedicated**; с клиента убрать |
+| Seasonality_Fix<br><sub>H4nz0</sub> | Фикс сезонов | Только на **dedicated**; с клиента убрать |
 | TrashItems<br><sub>virtuaCode</sub> | Отдельный Trash / удаление предметов | Trash уже в **QSS** |
+| Venture_Floating_Items<br><sub>VentureValheim</sub> | Выборочный float лута в воде | У нас выкл; V+ `itemsFloatInWater=false` |
 
 ---
 
@@ -176,6 +178,9 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
+[GameClock]
+enabled = false
+; itemsFloatInWater = false  (плавучесть всего лута — выкл; Venture_Floating_Items не ставить)
 
 ; Azumatt.AzuAntiArthriticCrafting.cfg  (AAA_Crafting — если ставишь)
 [5 - Recipe Tracker (Position)]

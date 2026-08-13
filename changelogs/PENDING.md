@@ -44,8 +44,13 @@ ChestUnload / ShipExploration в zip **без изменений** (как в 08
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
 - **Asocial_Cartography** — Disable/Uninstall (вместо него Better_Cartography_Table)
+- **Venture_Floating_Items** — Disable/Uninstall (плавающие предметы; у нас выкл)
+- **TimedTorchesStayLit** / **Seasonality_Fix** — с клиента убрать (только на **dedicated**)
+- **ConditionalConfigSync** — сирота, не нужен
 - Yanlo-QSSSortButtonOffset (старый UI-патч; не нужен)
 - Не ставить: **AzuAutoStore**, **TrashItems** (см. [Удалить в STACK](../docs/STACK.md#удалить))
+
+В **ValheimPlus** (не отдельный мод): `[GameClock] enabled = false` — часы на экране выкл.
 
 ### Конфиг
 
@@ -83,6 +88,9 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
+[GameClock]
+enabled = false
+; itemsFloatInWater = false  (плавучесть всего лута — выкл; Venture_Floating_Items не ставить)
 
 ; Azumatt.AzuAntiArthriticCrafting.cfg  (AAA_Crafting — если ставишь)
 [5 - Recipe Tracker (Position)]

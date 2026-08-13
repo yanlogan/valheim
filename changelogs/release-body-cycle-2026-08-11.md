@@ -37,8 +37,13 @@ Baseline Yanlo zip уже здесь. Цикл **ещё open** (не все др
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
 - **Asocial_Cartography** — Disable/Uninstall (вместо него Better_Cartography_Table)
+- **Venture_Floating_Items** — Disable/Uninstall (плавающие предметы; у нас выкл)
+- **TimedTorchesStayLit** / **Seasonality_Fix** — с клиента убрать (только на **dedicated**)
+- **ConditionalConfigSync** — сирота, не нужен
 - Yanlo-QSSSortButtonOffset (старый UI-патч; не нужен)
 - Не ставить: **AzuAutoStore**, **TrashItems** (см. [Удалить в STACK](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#%D1%83%D0%B4%D0%B0%D0%BB%D0%B8%D1%82%D1%8C))
+
+В **ValheimPlus** (не отдельный мод): `[GameClock] enabled = false` — часы на экране выкл.
 
 ### Конфиг
 
@@ -76,6 +81,9 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
+[GameClock]
+enabled = false
+; itemsFloatInWater = false  (плавучесть всего лута — выкл; Venture_Floating_Items не ставить)
 
 ; Azumatt.AzuAntiArthriticCrafting.cfg  (AAA_Crafting — если ставишь)
 [5 - Recipe Tracker (Position)]
