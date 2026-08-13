@@ -44,6 +44,8 @@ ChestUnload / ShipExploration в zip **без изменений** (как в 08
 - GemHunter ShipExploration → Yanlo
 - NoBuildRestriction
 - **Asocial_Cartography** — Disable/Uninstall (вместо него Better_Cartography_Table)
+- Yanlo-QSSSortButtonOffset (старый UI-патч; не нужен)
+- Не ставить: **AzuAutoStore**, **TrashItems** (см. [Удалить в STACK](../docs/STACK.md#удалить))
 
 ### Конфиг
 
@@ -87,7 +89,7 @@ enabled = true
 Recipe Tracker Position = {"x":200.0,"y":200.0}
 [5 - Recipe Tracker (Sizes)]
 Recipe Tracker Panel Scale = {"x":0.5,"y":0.5}
-Recipe Tracker Item Name Max = 15
+Recipe Tracker Req Name Max = 15
 
 ; com.inventoryux.valheim.cfg  (CraftGuard — если ставишь с AAA)
 [CraftingUI]
