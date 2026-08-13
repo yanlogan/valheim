@@ -107,7 +107,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Имя (папка) | Версия | Что делает |
 |-------------|--------|------------|
 | Yanlo-ChestUnloadButton<br><sub>Yanlo</sub> | **1.3.0** | Кнопка **Unload под** Take All; leftovers eligible → открытый сундук. Нужны [QSS](#инвентарь) + [SC Unload](#инвентарь) ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
-| Yanlo-CraftyBoxesDrawerFix<br><sub>Yanlo</sub> | **1.1.3** | ItemDrawers считаются в CraftyBoxes/AAA (регресс 1.8.15). Только клиент; нужен [AzuCraftyBoxes](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
+| Yanlo-CraftyBoxesDrawerFix<br><sub>Yanlo</sub> | **1.1.3** | Крафт видит материалы в настенных drawers (без патча часто `0/N`). Только клиент; нужен [AzuCraftyBoxes](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
 | Yanlo-ShipExplorationAll<br><sub>Yanlo</sub> | **1.1.0** | Больший радиус карты на ванили + OdinShip. Вместо GemHunter [ShipExploration](#удалить) ([HOWTO](HOWTO.md#карта-и-корабли)) |
 
 ---

@@ -26,7 +26,7 @@ Status: **open** · started: **2026-08-09**
 
 **Yanlo** — zip [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе только:**
 
-- **Yanlo-CraftyBoxesDrawerFix** **1.1.3** <sub>от Yanlo</sub> — drawers в крафте/AAA Max (нужен AzuCraftyBoxes)
+- **Yanlo-CraftyBoxesDrawerFix** **1.1.3** <sub>от Yanlo</sub> — без него крафт часто пишет `0/N` на материалы, которые лежат в **настенных drawers** (в сундуках всё ок). С патчем drawers тоже считаются / тянутся; если ставишь AAA — цифра **Max** тоже правильная.
 
 ChestUnload / ShipExploration в zip **без изменений** (как в 08-11).
 

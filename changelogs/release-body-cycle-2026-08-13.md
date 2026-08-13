@@ -6,7 +6,9 @@
 
 ## Дельта к 08-11
 
-**Только одно новое:** **Yanlo-CraftyBoxesDrawerFix** **1.1.3** — ItemDrawers в CraftyBoxes/AAA Max (регресс AzuCraftyBoxes 1.8.15).
+**Только одно новое:** **Yanlo-CraftyBoxesDrawerFix** **1.1.3**
+
+Без него у крафт-станции материалы в **настенных drawers** часто показываются как `0/N` (хотя они там есть; из сундуков — нормально). С патчем крафт их видит и забирает; у AAA цифра **Max** тоже сходится.
 
 Zip [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (полный `Yanlo-*`; ChestUnload / ShipExploration **не менялись**).
 

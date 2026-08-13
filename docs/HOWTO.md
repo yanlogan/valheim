@@ -17,7 +17,7 @@
 
 ## Крафт и стройка
 
-- **AzuCraftyBoxes** — крафт/стройка тянут из сундуков **и ItemDrawers** до ~**50 м**; HUD учитывает их. Пауза pull: обычно `O+LeftAlt` (свой хоткей в F1). V+ CraftFromChest у нас **выкл**. Нужен **Yanlo-CraftyBoxesDrawerFix** (из zip), иначе drawers в 1.8.15 часто `0/N`.
+- **AzuCraftyBoxes** — крафт/стройка тянут из сундуков **и настенных drawers** до ~**50 м**; HUD это учитывает. Пауза pull: обычно `O+LeftAlt` (свой хоткей в F1). V+ CraftFromChest у нас **выкл**. Без **Yanlo-CraftyBoxesDrawerFix** (из zip) drawers часто показывают `0/N`, хотя материалы там есть.
 - **WardIsLove** — крафтится **Thorward** (ванильный ward не крафтится). У своего дома: сломай ward, который поставил хост → поставь **свой** на то же место → Interact → **Ward Range** = число на **знаке рядом**. На общую зону (плавильни) ward не ставим.
 - **PlanBuild**:
   - **Plan Hammer** (1 дерево) — синие планы без ресурсов; потом материалы / **Plan Totem** / обычный Hammer.
