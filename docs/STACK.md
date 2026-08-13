@@ -27,6 +27,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Имя | Что делает | Почему убрать |
 |-----|------------|---------------|
 | AzuAutoStore<br><sub>Azumatt</sub> | Автоскладирование лута из инвентаря в соседние сундуки | С ItemDrawers может **съедать остаток** стака |
+| Asocial_Cartography<br><sub>VentureValheim</sub> | Старый шаринг карты | Заменён [Better_Cartography_Table](#инвентарь); Disable/Uninstall |
 | ConditionalConfigSync<br><sub>shudnal</sub> | Условный sync конфигов клиент↔сервер | Сирота, не используется |
 | NoBuildRestriction<br><sub>BlackViking</sub> | Снимает ванильные лимиты стройки | Не используем |
 | ShipExploration<br><sub>GemHunter1</sub> | Больший радиус карты на корабле | Заменён [Yanlo-ShipExplorationAll](#yanlo); вместе не ставить |
