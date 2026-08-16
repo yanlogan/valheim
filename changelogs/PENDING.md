@@ -6,7 +6,7 @@ Status: **open** · started: **2026-08-09**
 ## Ссылки
 
 - **Дельта (этот файл):** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
-- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-13
+- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
 - **Стек / HOWTO / cfg:** [STACK](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md) · [HOWTO](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md) · [cfg/](https://github.com/yanlogan/valheim/tree/main/cfg)
 
 > Baseline zip уже на Release; цикл **open**, пока не все друзья забрали апдейт. Полный стек — в STACK; здесь дельта для друзей.
@@ -24,11 +24,11 @@ Status: **open** · started: **2026-08-09**
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
 
-**Yanlo** — zip [`YanloMods-cycle-2026-08-13.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-13/YanloMods-cycle-2026-08-13.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе только:**
+**Yanlo** — zip [`YanloMods-cycle-2026-08-16.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-16/YanloMods-cycle-2026-08-16.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе:**
 
-- **Yanlo-CraftyBoxesDrawerFix** **1.1.3** <sub>от Yanlo</sub> — без него крафт часто пишет `0/N` на материалы, которые лежат в **настенных drawers** (в сундуках всё ок). С патчем drawers тоже считаются / тянутся; если ставишь AAA — цифра **Max** тоже правильная.
+- **Yanlo-CraftyBoxesDrawerFix** **1.1.4** <sub>от Yanlo</sub> — без него крафт часто пишет `0/N` на материалы в **настенных drawers** (в сундуках всё ок). С патчем drawers считаются / тянутся; AAA **Max** тоже. **1.1.4:** меньше просадка FPS в инвентаре/сундуке (скан drawers только у станции / с молотком).
 
-ChestUnload / ShipExploration в zip **без изменений** (как в 08-11).
+ChestUnload / ShipExploration в zip **без изменений**.
 
 **По желанию**
 

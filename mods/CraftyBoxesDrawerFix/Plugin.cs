@@ -15,8 +15,9 @@ namespace CraftyBoxesDrawerFix
 {
     /// <summary>
     /// CraftyBoxes 1.8.15 drawer inject + AAA Max fix.
+    /// 1.1.4: skip drawer inject outside craft station / build mode (inventory/chest FPS).
     /// 1.1.3: one AggregatedMkzContainer (dict ItemCount) instead of N wrappers;
-    /// AAA GetAvailableItems only when at a crafting station (inventory/chest FPS).
+    /// AAA GetAvailableItems only when at a crafting station.
     /// </summary>
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("Azumatt.AzuCraftyBoxes", BepInDependency.DependencyFlags.HardDependency)]
@@ -26,7 +27,7 @@ namespace CraftyBoxesDrawerFix
     {
         public const string PluginGuid = "yanlo.CraftyBoxesDrawerFix";
         public const string PluginName = "CraftyBoxes Drawer Fix";
-        public const string PluginVersion = "1.1.3";
+        public const string PluginVersion = "1.1.4";
 
         internal const string AaaGuid = "Azumatt.AzuAntiArthriticCrafting";
         private const float MkzInjectInterval = 0.5f;
@@ -361,6 +362,26 @@ namespace CraftyBoxesDrawerFix
             return player != null && player.GetCurrentCraftingStation() != null;
         }
 
+        /// <summary>
+        /// Drawers only matter for craft-from-containers / build HUD pull.
+        /// Inventory or chest alone: skip FindObjects + inject (was still hitching FPS).
+        /// </summary>
+        private static bool NeedsDrawerInject()
+        {
+            Player player = Player.m_localPlayer;
+            if (player == null)
+            {
+                return false;
+            }
+
+            if (player.GetCurrentCraftingStation() != null)
+            {
+                return true;
+            }
+
+            return player.InPlaceMode();
+        }
+
         private void PatchCraftyBoxesNearby()
         {
             if (_getNearbyOpen == null)
@@ -656,6 +677,17 @@ namespace CraftyBoxesDrawerFix
         {
             if (list == null)
             {
+                return;
+            }
+
+            // Inventory / chest without station or hammer: no drawer scan.
+            if (!NeedsDrawerInject())
+            {
+                if (HasOurMkzWrapper(list))
+                {
+                    StripExistingMkzWrappers(list);
+                }
+
                 return;
             }
 

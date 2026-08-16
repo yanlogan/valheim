@@ -2,15 +2,13 @@
 - README / старт: https://github.com/yanlogan/valheim
 - Стек: https://github.com/yanlogan/valheim/blob/main/docs/STACK.md
 - Как играть: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
-- Конфиги (файлы): https://github.com/yanlogan/valheim/tree/main/cfg
-- Дельта цикла: https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
-- Release + Yanlo zip: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-13
+- Конфиги: https://github.com/yanlogan/valheim/tree/main/cfg
+- Дельта: https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
+- Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
 
 Что изменилось:
-Добавлено: AzuCraftyBoxes, Better_Cartography_Table, ImpactfulSkills **0.12.0** (обновить), MultiUserChest, PlanBuild, WardIsLove
-Yanlo **новое:** CraftyBoxesDrawerFix **1.1.3** — крафт снова видит материалы в настенных drawers (без патча часто 0/N). Zip YanloMods-cycle-2026-08-13.zip (ChestUnload/ShipExploration без изменений)
-По желанию: AAA_Crafting, BetterSounds, CraftGuard, Expand_World_Music, Forteca_Soundtrack, VNEI
-Удалено / с клиента: GemHunter ShipExploration, NoBuildRestriction, Asocial_Cartography, Venture_Floating_Items, TimedTorches+Seasonality_Fix (только dedicated), ConditionalConfigSync, QSSSortButtonOffset; не ставить AzuAutoStore/TrashItems. V+ GameClock=false
-Конфиг: cfg/ или ключи в PENDING/STACK
+Yanlo **новое:** CraftyBoxesDrawerFix **1.1.4** — крафт видит drawers; меньше FPS-просадка в инвентаре/сундуке. Zip YanloMods-cycle-2026-08-16.zip
+Остальное цикла (CraftyBoxes, PlanBuild, WardIsLove, ImpactfulSkills 0.12.0, …) — как раньше, см. PENDING/STACK
+Удалено / с клиента: см. PENDING (Asocial, Floating, TimedTorches с клиента, GameClock=false, …)
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
