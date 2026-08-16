@@ -65,7 +65,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | MultiUserChest<br><sub>MSchmoecker</sub> | Несколько игроков открывают один сундук одновременно |
 | Official_BepInEx_ConfigurationManager<br><sub>Azumatt</sub> | Настройки модов по **F1** |
 | PlanBuild<br><sub>MathiasDecrock</sub> | Plan Hammer / Plan Totem / Blueprint Rune — планы и копирование построек ([HOWTO](HOWTO.md#крафт-и-стройка)) |
-| Quick_Stack_Store_Sort_Trash_Restock<br><sub>Goldenrevolver</sub> | Только **Trash** (Sort выкл — EPI quickslots при смерти); stack/restock/store-all выкл ([HOWTO](HOWTO.md#инвентарь-и-сундуки), [Конфиги](#конфиги)) |
+| Quick_Stack_Store_Sort_Trash_Restock<br><sub>Goldenrevolver</sub> | Только **Sort** (сверху вниз) и **Trash**; stack/restock/store-all выкл ([HOWTO](HOWTO.md#инвентарь-и-сундуки), [Конфиги](#конфиги)) |
 | Recycle_N_Reclaim<br><sub>Azumatt</sub> | Разбор у верстака; **Reclaim all** на сундуке возвращает материалы в игрока |
 | SmarterContainers<br><sub>Roses</sub> | Умная раскладка + Unload в соседние сундуки (~14 м). Кнопка Unload — [Yanlo-ChestUnloadButton](#yanlo) |
 | ValheimPlus_Grantapher_Temporary<br><sub>Grantapher</sub> | Большой QoL-пак: доп. настройки инвентаря, зданий, лодок и куча мелких правок ванили (наш профиль — в [Конфиги](#конфиги)) |
@@ -156,7 +156,7 @@ HideBaseGamePlaceStacksButton = true
 DisplayRestockButtons = Disabled
 DisplayStoreAllButton = false
 NeverMoveTakeAllButton = true
-DisplaySortButtons = Disabled
+DisplaySortButtons = Both
 SortMergesStacks = false
 DisplayTrashCanUI = true
 AutoSort = Never
@@ -179,8 +179,6 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
-[Inventory]
-mergeWithExistingStacks = false
 [GameClock]
 enabled = false
 ; itemsFloatInWater = false  (плавучесть всего лута — выкл; Venture_Floating_Items не ставить)

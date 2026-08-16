@@ -1,13 +1,11 @@
-Ссылки:
-- README / старт: https://github.com/yanlogan/valheim
-- Стек: https://github.com/yanlogan/valheim/blob/main/docs/STACK.md
-- Как играть: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
-- Конфиги: https://github.com/yanlogan/valheim/tree/main/cfg
-- Дельта: https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
-- Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
+# Discord (черновик, ≤1800–2000 символов)
+
+Стек / HOWTO: https://github.com/yanlogan/valheim
+cfg: https://github.com/yanlogan/valheim/tree/main/cfg
+Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
 
 Что изменилось:
-**EPI death:** вещи из quick slots снова терялись при смерти → QSS только **Trash** (Sort выкл), V+ `mergeWithExistingStacks=false`. Возьми обновлённый cfg из repo / ключи в STACK. Перезапуск.
+**Sort обратно** — cfg снова Sort+Trash как раньше (`DisplaySortButtons=Both`, V+ `mergeWithExistingStacks=true`). Возьми обновлённый cfg / ключи в STACK. Перезапуск клиента.
 Остальное цикла — PENDING/STACK (PortalWardFix / DrawerFix zip без изменений).
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

@@ -55,7 +55,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 
 ### Конфиг
 
-- **AzuEPI / смерть:** снова терялись вещи из **quick slots**. QSS → **Trash only** (`DisplaySortButtons = Disabled`); V+ **`mergeWithExistingStacks = false`**. Перезапуск клиента + dedicated; death-test мусором в quickslots. Sort больше нет — dump через **Unload**.
+- **Sort restored** (speculative disable reverted); host debugging with **Yanlo-EpiDeathDiag** (friends ignore). `DisplaySortButtons=Both` again; `mergeWithExistingStacks=true`.
 
 
 Готовые файлы: [`cfg/`](../cfg/). Или только эти ключи ([STACK → Конфиги](../docs/STACK.md#конфиги)), если свои бинды надо сохранить:
@@ -68,7 +68,7 @@ HideBaseGamePlaceStacksButton = true
 DisplayRestockButtons = Disabled
 DisplayStoreAllButton = false
 NeverMoveTakeAllButton = true
-DisplaySortButtons = Disabled
+DisplaySortButtons = Both
 SortMergesStacks = false
 DisplayTrashCanUI = true
 AutoSort = Never
@@ -92,8 +92,6 @@ Container Range = 50
 enabled = false
 [StructuralIntegrity]
 enabled = true
-[Inventory]
-mergeWithExistingStacks = false
 [GameClock]
 enabled = false
 ; itemsFloatInWater = false  (плавучесть всего лута — выкл; Venture_Floating_Items не ставить)
@@ -113,7 +111,7 @@ OrganizeRecipes = false
 
 ### Как пользоваться
 
-См. [HOWTO](../docs/HOWTO.md) (Trash / Unload / Wards / PlanBuild / Cartography / AAA tracker / …).
+См. [HOWTO](../docs/HOWTO.md) (Sort / Unload / Wards / PlanBuild / Cartography / AAA tracker / …).
 
 ---
 
