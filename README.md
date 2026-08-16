@@ -40,7 +40,8 @@
 | Sort пакует **снизу вверх** | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**, с сервера не приходит) — или готовый файл из [`cfg/`](cfg/) |
 | Крафт жрёт ресурсы **дважды** | V+ `[CraftFromChest] enabled = false` при CraftyBoxes ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот **`.yml`** из `BepInEx/config/` (`.cfg` не трогай); мод создаст заново |
-| **E** на ItemDrawer: взял стак, остаток **пропал** | Не ставь **AzuAutoStore** (см. Удалить в STACK). Безопаснее `Alt+E` (по 1) |
+| **E** на ItemDrawer: взял стак, остаток **пропал** | Фикс в стеке Yanlo: **AzuAutoStore** в [Удалить](docs/STACK.md#удалить) — специально не ставим (иначе Take Stack может съесть остаток). Если уже стоит — выключи |
+
 | Вещи **теряются при смерти** (с AzuEPI) | QSS только **Sort + Trash** — не включай Quick Stack / Restock / Store All (наш cfg так и сделан) |
 | Unload выкидывает грибы/ягоды/овощи не туда | Так задумано (`groupsList`). Dump-сундук после вылазки — **>14 м** от домов. Favorites QSS на Unload **не** влияют |
 | Unload не кладёт остаток в **открытый** сундук | Нужен **Yanlo-ChestUnloadButton** 1.3.0+ (`DumpLeftoversToOpenChest`); чистый SC этого не делает |
