@@ -33,7 +33,6 @@
 |---------|----------------------|
 | Кик / «mod mismatch» | Нет **AzuCraftyBoxes** / **PlanBuild** / **WardIsLove** (и др. ServerSync) **той же версии**, что у хоста; мод не Enable |
 | Missing prefab / розовый куб | Нет контент-мода из [STACK](docs/STACK.md) (PlantEverything, OdinShip, BoneAppetit, …) |
-| Join ErrorVersion / Recycle «never sent version» | Неполный стек или старый профиль; сверь [STACK](docs/STACK.md) + свежий **Yanlo** zip. Если Join через r2modman «Start modded» странно ведёт себя — пиши хосту (dual-doorstop) |
 | Нет кнопки **Unload** / карта на лодке как ваниль | Не распакован **Yanlo** zip (`ChestUnloadButton` / `ShipExplorationAll`) в `plugins/` |
 | В drawers / у крафта **0/N**, хотя материалы в настенных ящиках есть; AAA Max врёт | Нужен **Yanlo-CraftyBoxesDrawerFix** из zip (клиент). Без него CraftyBoxes часто не видит makail drawers |
 | Портал «прохожу насквозь» / нет телепорта (особенно с базы) | **Yanlo-PortalWardFix** из zip + **WardIsLove**. Баг WiL: чужой большой радиус ломает CheckIn |
@@ -41,18 +40,12 @@
 | Крафт жрёт ресурсы **дважды** | V+ `[CraftFromChest] enabled = false` при CraftyBoxes ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот **`.yml`** из `BepInEx/config/` (`.cfg` не трогай); мод создаст заново |
 | **E** на ItemDrawer: взял стак, остаток **пропал** | Фикс в стеке Yanlo: **AzuAutoStore** в [Удалить](docs/STACK.md#удалить) — специально не ставим (иначе Take Stack может съесть остаток). Если уже стоит — выключи |
-
 | Вещи **теряются при смерти** (с AzuEPI) | QSS только **Sort + Trash** — не включай Quick Stack / Restock / Store All (наш cfg так и сделан) |
 | Unload выкидывает грибы/ягоды/овощи не туда | Так задумано (`groupsList`). Dump-сундук после вылазки — **>14 м** от домов. Favorites QSS на Unload **не** влияют |
-| Unload не кладёт остаток в **открытый** сундук | Нужен **Yanlo-ChestUnloadButton** 1.3.0+ (`DumpLeftoversToOpenChest`); чистый SC этого не делает |
 | На корабле OdinShip (War/Merchant/каноэ…) туман как ваниль | Удали **GemHunter ShipExploration**; поставь **Yanlo-ShipExplorationAll** |
-| Остался `Yanlo-QSSSortButtonOffset` | Удали — заменён `ChestUnloadButton` |
 | Ward Range в GUI «N%» непонятен | Это не проценты: значение **N** на шкале 0–100 ≈ радиус **N** (число со знака у дома) |
 | AAA и CraftGuard ломают UI станций | При обоих: `OrganizeRecipes = false` в `com.inventoryux.valheim.cfg` ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | BetterSounds — звуки ванильные | После Install распакуй **`CustomAudio.zip`** рядом с DLL. Не ставь Female вместе с male. На dedicated **не** копировать |
-| Постройки/лодки всё ещё бьются, хотя «иммунитет» в V+ | Нужен `[StructuralIntegrity] enabled = true` (у нас в `cfg/`). OdinShip не всегда считается `$ship` — лодки могут вести себя иначе |
-| V+ Inventory + EPI: «невидимые» слоты / пропажи | Известный риск; смотри `azuepi.quickfix` / `azuepi.invlistall` в консоли, не крути лишние inventory-моды |
-| Data Rate Modifier / `dream.modify-data-rate` | **Не ставить** — NRE на актуальной Valheim |
 
 ---
 
