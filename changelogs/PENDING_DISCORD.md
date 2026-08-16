@@ -8,7 +8,7 @@
 
 Что изменилось:
 Yanlo **новое:** PortalWardFix **1.0.1** — обязателен на клиенте с WardIsLove (портал «сквозь» / баг WiL). Zip обновить: YanloMods-cycle-2026-08-16.zip
-Также в zip: CraftyBoxesDrawerFix 1.1.4 (drawers / FPS). Остальное цикла — PENDING/STACK
+Также в zip: CraftyBoxesDrawerFix **1.1.5** (drawers / AAA queue). Остальное цикла — PENDING/STACK
 Удалено / с клиента: см. PENDING
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

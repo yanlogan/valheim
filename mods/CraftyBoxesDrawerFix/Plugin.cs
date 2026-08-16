@@ -15,6 +15,7 @@ namespace CraftyBoxesDrawerFix
 {
     /// <summary>
     /// CraftyBoxes 1.8.15 drawer inject + AAA Max fix.
+    /// 1.1.5: pin AAA multi-craft/reclaim queue to the started recipe (no jump to next).
     /// 1.1.4: skip drawer inject outside craft station / build mode (inventory/chest FPS).
     /// 1.1.3: one AggregatedMkzContainer (dict ItemCount) instead of N wrappers;
     /// AAA GetAvailableItems only when at a crafting station.
@@ -27,7 +28,7 @@ namespace CraftyBoxesDrawerFix
     {
         public const string PluginGuid = "yanlo.CraftyBoxesDrawerFix";
         public const string PluginName = "CraftyBoxes Drawer Fix";
-        public const string PluginVersion = "1.1.4";
+        public const string PluginVersion = "1.1.5";
 
         internal const string AaaGuid = "Azumatt.AzuAntiArthriticCrafting";
         private const float MkzInjectInterval = 0.5f;
@@ -35,6 +36,7 @@ namespace CraftyBoxesDrawerFix
         internal static Plugin Instance;
         internal static ConfigEntry<bool> Enabled;
         internal static ConfigEntry<bool> FixAaaMaxCraft;
+        internal static ConfigEntry<bool> FixAaaCraftQueue;
         internal static ConfigEntry<bool> DebugLog;
 
         private static readonly FieldInfo EmptyListField =
@@ -286,6 +288,11 @@ namespace CraftyBoxesDrawerFix
                 "FixAaaMaxCraft",
                 true,
                 "Fix AAA Max: craft count (stale AcbExtra + never-zero Clamp). Soft-dep AAA.");
+            FixAaaCraftQueue = Config.Bind(
+                "General",
+                "FixAaaCraftQueue",
+                true,
+                "Keep AAA multi-craft/reclaim queue on the started recipe (stop jump to next list item). Soft-dep AAA.");
             DebugLog = Config.Bind(
                 "General",
                 "DebugLog",
@@ -298,13 +305,21 @@ namespace CraftyBoxesDrawerFix
 
             PatchCraftyBoxesNearby();
 
-            if (FixAaaMaxCraft.Value && Chainloader.PluginInfos.ContainsKey(AaaGuid))
+            if (Chainloader.PluginInfos.ContainsKey(AaaGuid))
             {
-                PatchAaaMaxCraft();
+                if (FixAaaMaxCraft.Value)
+                {
+                    PatchAaaMaxCraft();
+                }
+
+                if (FixAaaCraftQueue.Value)
+                {
+                    AaaCraftQueueFix.Apply(_harmony);
+                }
             }
-            else if (FixAaaMaxCraft.Value)
+            else if (FixAaaMaxCraft.Value || FixAaaCraftQueue.Value)
             {
-                Logger.LogInfo("AAA not loaded - skip Max craft patches.");
+                Logger.LogInfo("AAA not loaded - skip AAA craft patches.");
             }
 
             Logger.LogInfo($"{PluginName} {PluginVersion} loaded");

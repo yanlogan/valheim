@@ -1,7 +1,7 @@
 {
   "name": "CraftyBoxesDrawerFix",
-  "version_number": "1.1.4",
-  "description": "Fix CraftyBoxes drawers + AAA Max. Perf: inject only at craft/build; aggregated drawers.",
+  "version_number": "1.1.5",
+  "description": "Fix CraftyBoxes drawers + AAA Max + AAA multi-craft queue jump. Perf: inject only at craft/build.",
   "dependencies": [
     "denikson-BepInExPack_Valheim",
     "Azumatt-AzuCraftyBoxes",

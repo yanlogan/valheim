@@ -1,6 +1,6 @@
 # CraftyBoxes Drawer Fix (Yanlo)
 
-Client-only patch. **1.1.4**
+Client-only patch. **1.1.5**
 
 ## Fixes
 
@@ -9,6 +9,9 @@ Inject Makail drawers into CraftyBoxes nearby list (1.8.15 regression: scratch l
 
 ### AAA `Max:` craft amount
 Per-item CraftyBoxes counts (no stale `AcbExtra`); allow `Max: 0`.
+
+### AAA multi-craft / reclaim queue (1.1.5)
+AAA `queueNextCraft` auto-clicks Craft after each item. `UpdateCraftingPanel` can jump selection to list index 0 (`GetSelectedRecipeIndex` fallback) — next craft becomes the wrong recipe (same with Recycle reclaim). We pin selection to the started recipe, or cancel remaining AAA amount if it is gone/uncraftable.
 
 ### Perf
 - **1.1.4:** no drawer inject outside craft station / hammer build mode (inventory/chest hitch).
@@ -21,7 +24,7 @@ Per-item CraftyBoxes counts (no stale `AcbExtra`); allow `Max: 0`.
 - BepInEx
 - `Azumatt-AzuCraftyBoxes` **1.8.15**
 - `makail-ItemDrawers`
-- Optional: `Azumatt-AAA_Crafting` (Max fix soft-dep)
+- Optional: `Azumatt-AAA_Crafting` (Max + queue fix soft-dep)
 
 ## Install
 
@@ -35,6 +38,7 @@ Per-item CraftyBoxes counts (no stale `AcbExtra`); allow `Max: 0`.
 |-----|---------|
 | Enabled | true |
 | FixAaaMaxCraft | true |
+| FixAaaCraftQueue | true |
 | DebugLog | false |
 
 ## Build
