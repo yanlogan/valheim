@@ -12,3 +12,5 @@
 **Yanlo-CraftyBoxesDrawerFix** **1.1.5**: AAA multi-craft/reclaim не прыгает на следующий рецепт; чинит просадку FPS в инвентаре и на крафт-станциях.
 
 Zip [`YanloMods-cycle-2026-08-16.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-16/YanloMods-cycle-2026-08-16.zip) → `BepInEx/plugins/` (ChestUnload / ShipExploration без изменений).
+
+**Config (EPI death):** QSS `DisplaySortButtons = Disabled` (Trash only; Sort off); V+ `[Inventory] mergeWithExistingStacks = false` — чтобы quick slots AzuEPI не терялись при смерти. Готовые файлы в [`cfg/`](https://github.com/yanlogan/valheim/tree/main/cfg).

@@ -7,8 +7,7 @@
 - Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
 
 Что изменилось:
-Yanlo **новое:** PortalWardFix **1.0.1** — обязателен на клиенте с WardIsLove (неработающий портал с прохождением насквозь). Zip обновить: YanloMods-cycle-2026-08-16.zip
-Также в zip: CraftyBoxesDrawerFix **1.1.5** (просадка FPS в инвентаре и на крафт-станциях). Остальное цикла — PENDING/STACK
-Удалено / с клиента: см. PENDING
+**EPI death:** вещи из quick slots снова терялись при смерти → QSS только **Trash** (Sort выкл), V+ `mergeWithExistingStacks=false`. Возьми обновлённый cfg из repo / ключи в STACK. Перезапуск.
+Остальное цикла — PENDING/STACK (PortalWardFix / DrawerFix zip без изменений).
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

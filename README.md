@@ -36,11 +36,11 @@
 | Нет кнопки **Unload** / карта на лодке как ваниль | Не распакован **Yanlo** zip (`ChestUnloadButton` / `ShipExplorationAll`) в `plugins/` |
 | В drawers / у крафта **0/N**, хотя материалы в настенных ящиках есть; AAA Max врёт; AAA amount>1 прыгает на следующий рецепт | Нужен **Yanlo-CraftyBoxesDrawerFix** **1.1.5+** из zip (клиент) |
 | Портал не работает, проходишь насквозь (особенно с базы) | **Yanlo-PortalWardFix** из zip + **WardIsLove**. Баг WardIsLove: радиус последнего инициализированного варда ломает считывание близости портала |
-| Sort пакует **снизу вверх** | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**, с сервера не приходит) — или готовый файл из [`cfg/`](cfg/) |
+| Sort пакует **снизу вверх** | Sort сейчас **выкл** в нашем cfg; если снова включишь — `UseTopDownLogicForEverything = true` на каждом клиенте |
 | Крафт жрёт ресурсы **дважды** | V+ `[CraftFromChest] enabled = false` при CraftyBoxes ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот **`.yml`** из `BepInEx/config/` (`.cfg` не трогай); мод создаст заново |
 | **E** на ItemDrawer: взял стак, остаток **пропал** | Фикс в стеке Yanlo: **AzuAutoStore** в [Удалить](docs/STACK.md#удалить) — специально не ставим (иначе Take Stack может съесть остаток). Если уже стоит — выключи |
-| Вещи **теряются при смерти** (с AzuEPI) | QSS только **Sort + Trash** — не включай Quick Stack / Restock / Store All (наш cfg так и сделан) |
+| Вещи **теряются при смерти** (с AzuEPI) | QSS только **Trash** (Sort тоже выкл); не включай Quick Stack / Restock / Store All; V+ `mergeWithExistingStacks=false` |
 | Unload выкидывает грибы/ягоды/овощи не туда | Так задумано (`groupsList`). Dump-сундук после вылазки — **>14 м** от домов. Favorites QSS на Unload **не** влияют |
 | На корабле OdinShip (War/Merchant/каноэ…) туман как ваниль | Удали **GemHunter ShipExploration**; поставь **Yanlo-ShipExplorationAll** |
 | Ward Range в GUI «N%» непонятен | Это не проценты: значение **N** на шкале 0–100 ≈ радиус **N** (число со знака у дома) |
