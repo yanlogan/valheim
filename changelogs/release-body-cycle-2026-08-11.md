@@ -1,11 +1,9 @@
 # cycle-2026-08-11
 
-Baseline Yanlo zip уже здесь. Цикл **ещё open** (не все друзья забрали) — живая дельта: [PENDING](https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md).
-
-**Онбординг (канон):**
-- [Стек модов](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md)
-- [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md)
-- [Готовые cfg](https://github.com/yanlogan/valheim/tree/main/cfg) · или ключи ниже / в [STACK → Конфиги](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#конфиги)
+**С чего начать:**
+- [Список модов](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md) — что ставить и что убрать
+- [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md) — кнопки и фичи
+- [Готовые настройки](https://github.com/yanlogan/valheim/tree/main/cfg) — или только ключи ниже / в [STACK → Конфиги](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#конфиги)
 
 ## Что изменилось
 
