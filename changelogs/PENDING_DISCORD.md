@@ -7,8 +7,8 @@
 - Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
 
 Что изменилось:
-Yanlo **новое:** CraftyBoxesDrawerFix **1.1.4** — крафт видит drawers; меньше FPS-просадка в инвентаре/сундуке. Zip YanloMods-cycle-2026-08-16.zip
-Остальное цикла (CraftyBoxes, PlanBuild, WardIsLove, ImpactfulSkills 0.12.0, …) — как раньше, см. PENDING/STACK
-Удалено / с клиента: см. PENDING (Asocial, Floating, TimedTorches с клиента, GameClock=false, …)
+Yanlo **новое:** PortalWardFix **1.0.1** — обязателен на клиенте с WardIsLove (портал «сквозь» / баг WiL). Zip обновить: YanloMods-cycle-2026-08-16.zip
+Также в zip: CraftyBoxesDrawerFix 1.1.4 (drawers / FPS). Остальное цикла — PENDING/STACK
+Удалено / с клиента: см. PENDING
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

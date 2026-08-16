@@ -26,6 +26,7 @@ Status: **open** · started: **2026-08-09**
 
 **Yanlo** — zip [`YanloMods-cycle-2026-08-16.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-16/YanloMods-cycle-2026-08-16.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе:**
 
+- **Yanlo-PortalWardFix** **1.0.1** <sub>от Yanlo</sub> — **обязательно на клиенте** с WardIsLove. Чинит «хожу сквозь портал» / нет телепорта (баг WiL: чужой большой радиус ломает CheckIn + пустой INSIDE).
 - **Yanlo-CraftyBoxesDrawerFix** **1.1.4** <sub>от Yanlo</sub> — без него крафт часто пишет `0/N` на материалы в **настенных drawers** (в сундуках всё ок). С патчем drawers считаются / тянутся; AAA **Max** тоже. **1.1.4:** меньше просадка FPS в инвентаре/сундуке (скан drawers только у станции / с молотком).
 
 ChestUnload / ShipExploration в zip **без изменений**.

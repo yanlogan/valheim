@@ -111,6 +111,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 |-------------|--------|------------|
 | Yanlo-ChestUnloadButton<br><sub>Yanlo</sub> | **1.3.0** | Кнопка **Unload под** Take All; leftovers eligible → открытый сундук. Нужны [QSS](#инвентарь) + [SC Unload](#инвентарь) ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
 | Yanlo-CraftyBoxesDrawerFix<br><sub>Yanlo</sub> | **1.1.4** | Крафт видит материалы в настенных drawers (без патча часто `0/N`). Только клиент; нужен [AzuCraftyBoxes](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
+| Yanlo-PortalWardFix<br><sub>Yanlo</sub> | **1.0.1** | Фикс WiL: портал «сквозь» / нет телепорта при ложном CheckIn + пустом INSIDE. **Нужен на клиенте** вместе с [WardIsLove](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
 | Yanlo-ShipExplorationAll<br><sub>Yanlo</sub> | **1.1.0** | Больший радиус карты на ванили + OdinShip. Вместо GemHunter [ShipExploration](#удалить) ([HOWTO](HOWTO.md#карта-и-корабли)) |
 
 ---
@@ -200,5 +201,5 @@ OrganizeRecipes = false
 ## Дополнительно
 <a id="дополнительно"></a>
 
-- **WardIsLove:** свой Thorward на доме, Ward Range = число со знака; после рестарта сервера просто перезайди.
+- **WardIsLove:** свой Thorward на доме, Ward Range = число со знака (GUI «%» = шкала 0–100); после рестарта сервера просто перезайди. Портал «сквозь» → **Yanlo-PortalWardFix** на клиенте.
 - Не находится в Online → смотри автора под именем; иногда несколько пакетов с похожим названием.
