@@ -12,7 +12,7 @@
 2. По [`docs/STACK.md`](docs/STACK.md): поставь всё из **Обязательно**, пройди **Удалить**. Контент-моды — по полному списку (иначе missing prefabs).
 3. Скачай **`YanloMods-….zip`** с [последнего релиза](https://github.com/yanlogan/valheim/releases/latest) → распакуй папки `Yanlo-*` в  
    `%AppData%\r2modmanPlus-local\Valheim\profiles\<твой_профиль>\BepInEx\plugins\`.
-4. Конфиги: либо готовые файлы из [`cfg/`](cfg/) в `BepInEx/config/`, либо только ключи из [STACK → Конфиги](docs/STACK.md#конфиги) (**свои хоткеи не затирай**, если правишь вручную).
+4. Конфиги: либо готовые файлы из [`cfg/`](cfg/) в `BepInEx/config/`, либо только настройки из [STACK → Конфиги](docs/STACK.md#конфиги) (**свои хоткеи не затирай**, если правишь вручную).
 5. Раздел **По желанию** в STACK — по вкусу; глянь [Как играть](docs/HOWTO.md) и [Что изменилось](docs/CHANGES.md) / Discord от хоста.
 
 Чужие моды — только через r2modman (Thunderstore). Полный export профиля (~1 ГБ) сюда не кладём.
