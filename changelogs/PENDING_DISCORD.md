@@ -2,10 +2,12 @@
 
 Стек / HOWTO: https://github.com/yanlogan/valheim
 cfg: https://github.com/yanlogan/valheim/tree/main/cfg
-Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
+Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18
 
-Что изменилось:
-**Sort обратно** — cfg снова Sort+Trash как раньше (`DisplaySortButtons=Both`, V+ `mergeWithExistingStacks=true`). Возьми обновлённый cfg / ключи в STACK. Перезапуск клиента.
-Остальное цикла — PENDING/STACK (PortalWardFix / DrawerFix zip без изменений).
+**Yanlo-EpiTombFit 1.3.0** — новый zip. Поставить **и на клиент, и на сервер** (хост копирует на dedicated).
+
+Чинит: если умер **далеко**, вернулся **порталом** к могиле — вещи из **быстрых слотов Z/X/C** и **слотов экипировки** (броня, пояс, wishbone, амулет) больше не должны пропадать и должны вернуться **на место**, а не в хотбар.
+
+Zip → `BepInEx/plugins/` (все папки `Yanlo-*`). Остальные Yanlo в zip без изменений.
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

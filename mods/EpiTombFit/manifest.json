@@ -1,0 +1,10 @@
+{
+  "name": "EpiTombFit",
+  "version_number": "1.3.0",
+  "website_url": "https://github.com/yanlogan/valheim",
+  "description": "Keeps AzuEPI quickslots and equipment-row items on tombstone after far death / portal return.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2202",
+    "Azumatt-AzuExtendedPlayerInventory"
+  ]
+}

@@ -11,7 +11,8 @@ $Mods = @(
     @{ Name = "ChestUnloadButton"; Project = "mods\ChestUnloadButton\ChestUnloadButton.csproj"; Dll = "ChestUnloadButton.dll" },
     @{ Name = "ShipExplorationAll"; Project = "mods\ShipExplorationAll\ShipExplorationAll.csproj"; Dll = "ShipExplorationAll.dll" },
     @{ Name = "CraftyBoxesDrawerFix"; Project = "mods\CraftyBoxesDrawerFix\CraftyBoxesDrawerFix.csproj"; Dll = "CraftyBoxesDrawerFix.dll" },
-    @{ Name = "PortalWardFix"; Project = "mods\PortalWardFix\PortalWardFix.csproj"; Dll = "PortalWardFix.dll" }
+    @{ Name = "PortalWardFix"; Project = "mods\PortalWardFix\PortalWardFix.csproj"; Dll = "PortalWardFix.dll" },
+    @{ Name = "EpiTombFit"; Project = "mods\EpiTombFit\EpiTombFit.csproj"; Dll = "EpiTombFit.dll" }
 )
 
 New-Item -ItemType Directory -Force -Path $Dist | Out-Null

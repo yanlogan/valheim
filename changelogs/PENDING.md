@@ -6,7 +6,7 @@ Status: **open** · started: **2026-08-09**
 ## Ссылки
 
 - **Дельта (этот файл):** https://github.com/yanlogan/valheim/blob/main/changelogs/PENDING.md
-- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-16
+- **Release + Yanlo zip:** https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18
 - **Стек / HOWTO / cfg:** [STACK](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md) · [HOWTO](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md) · [cfg/](https://github.com/yanlogan/valheim/tree/main/cfg)
 
 > Baseline zip уже на Release; цикл **open**, пока не все друзья забрали апдейт. Полный стек — в STACK; здесь дельта для друзей.
@@ -24,7 +24,11 @@ Status: **open** · started: **2026-08-09**
 - **PlanBuild** <sub>от MathiasDecrock</sub>
 - **WardIsLove** <sub>от Azumatt</sub> (сломать поставленный у дома Ward и выставить ему указанный на табличке радиус в GUI)
 
-**Yanlo** — zip [`YanloMods-cycle-2026-08-16.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-16/YanloMods-cycle-2026-08-16.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе:**
+**Yanlo** — zip [`YanloMods-cycle-2026-08-18.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-18/YanloMods-cycle-2026-08-18.zip) → `BepInEx/plugins/` (полный набор `Yanlo-*`). **Новое в этом бампе:**
+
+- **Yanlo-EpiTombFit** **1.3.0** <sub>от Yanlo</sub> — **клиент + dedicated.** Чинит пропадание вещей из **быстрых слотов (Z/X/C)** и **слотов экипировки** (броня, пояс, wishbone, амулет), если умер **далеко от базы** и вернулся **через портал**: могила могла сама опустеть, или лут после **E** не возвращался на место. Нужен AzuEPI.
+
+Предыдущий цикл (в том же zip, без изменений версий):
 
 - **Yanlo-PortalWardFix** **1.0.1** <sub>от Yanlo</sub> — **обязательно на клиенте** с WardIsLove. Чинит неработающий портал с прохождением насквозь (баг WardIsLove: радиус последнего инициализированного варда ломает считывание близости портала).
 - **Yanlo-CraftyBoxesDrawerFix** **1.1.5** <sub>от Yanlo</sub> — без него крафт часто пишет `0/N` на материалы в **настенных drawers** (в сундуках всё ок). С патчем drawers считаются / тянутся. **1.1.5:** крафт/reclaim пачкой больше не уезжает на следующий рецепт; чинит просадку FPS в инвентаре и на крафт-станциях.
@@ -55,7 +59,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 
 ### Конфиг
 
-- **Sort restored** (speculative disable reverted); host debugging with **Yanlo-EpiDeathDiag** (friends ignore). `DisplaySortButtons=Both` again; `mergeWithExistingStacks=true`.
+- **Sort restored** (speculative disable reverted). `DisplaySortButtons=Both`; `mergeWithExistingStacks=true`. Отладочный Yanlo-EpiDeathDiag снят — вместо него **Yanlo-EpiTombFit** в Release.
 
 
 Готовые файлы: [`cfg/`](../cfg/). Или только эти ключи ([STACK → Конфиги](../docs/STACK.md#конфиги)), если свои бинды надо сохранить:
