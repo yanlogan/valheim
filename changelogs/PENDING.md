@@ -35,6 +35,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 **По желанию**
 
 - **AAA_Crafting** <sub>от Azumatt</sub>
+- **AutoMapPins** <sub>от abfielder</sub> — yaml в [`cfg/`](../cfg/)
 - **BetterSounds** <sub>от Wiandar</sub> (male + `CustomAudio.zip`)
 - **CraftGuard** <sub>от jg224</sub>
 - **Expand_World_Music** <sub>от JereKuusela</sub>
@@ -114,6 +115,9 @@ Recipe Tracker Req Name Max = 15
 [CraftingUI]
 OrganizeRecipes = false
 ; Hammer OrganizeCrafting / OrganizeBuilding / OrganizeHeavyBuilding / OrganizeFurniture = true
+
+; FixItFelix.AutoMapPins.categories.vanilla.yaml  (AutoMapPins — если ставишь)
+; целиком файл из cfg/
 ```
 
 ### Как пользоваться

@@ -149,8 +149,6 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 
 Не затирай `*Keybind*` / свои бинды, если правишь вручную. `UseTopDownLogicForEverything` **не** приходит с сервера — выставь у себя (или возьми готовый QSS cfg).
 
-Optional **AutoMapPins**: целиком [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) (не в `sync-cfg.ps1`).
-
 ```ini
 ; goldenrevolver.quick_stack_store.cfg
 UseTopDownLogicForEverything = true
@@ -201,6 +199,9 @@ Recipe Tracker Req Name Max = 15
 [CraftingUI]
 OrganizeRecipes = false
 ; Hammer OrganizeCrafting / OrganizeBuilding / OrganizeHeavyBuilding / OrganizeFurniture = true
+
+; FixItFelix.AutoMapPins.categories.vanilla.yaml  (AutoMapPins — если ставишь)
+; целиком файл из cfg/ (не ключи) — радар ресурсов рядом; крипты + суртлинг-фермы навсегда
 ```
 
 ---

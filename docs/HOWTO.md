@@ -30,7 +30,7 @@
 ## Карта и корабли
 
 - **Better Cartography Table** — пины по умолчанию **private**. Public (шарится через стол): подойти к столу, открыть карту **со стола**, `LeftShift`+клик по своему пину.
-- **AutoMapPins** (optional) — радар, не вечная свалка: невырытая медь / оставшийся tar / pickables / морковь / живые гнёзда только пока ты рядом. Крипты, данжи, dvergr, суртлинг-гейзеры (`Surtlings`) — permanent. Ягоды и луговые грибы выкл. AMP-пины **не** шарятся через стол. Yaml хоста: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) (не в общем sync-cfg). Старый мусор на карте: сейв+релог; пины `Tar` от ям — кликом удалить. Не юзай `amp clear_pins` (сносит все пины).
+- **AutoMapPins** (optional) — радар, не вечная свалка: невырытая медь / оставшийся tar / pickables / морковь / живые гнёзда только пока ты рядом. Крипты, данжи, dvergr, суртлинг-гейзеры (`Surtlings`) — permanent. Ягоды и луговые грибы выкл. AMP-пины **не** шарятся через стол. Yaml: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml). Старый мусор на карте: сейв+релог; пины `Tar` от ям — кликом удалить. Не юзай `amp clear_pins` (сносит все пины).
 - **Yanlo-ShipExplorationAll** — больший радиус тумана на Raft/Karve/Longship и кораблях OdinShip.
 
 ## Скиллы и еда

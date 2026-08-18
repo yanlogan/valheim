@@ -5,16 +5,47 @@
 - [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md)
 - [Готовые настройки](https://github.com/yanlogan/valheim/tree/main/cfg)
 
-## Что нового
+## Yanlo zip
 
-**Yanlo-PortalWardFix 1.1.0** — **на клиенте** (хост копирует и на dedicated). После портала при включённых вардах друзья снова открывают **свои** сундуки; портал «насквозь» тоже. Перезапиши папку `Yanlo-PortalWardFix`.
+[`YanloMods-cycle-2026-08-18.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-18/YanloMods-cycle-2026-08-18.zip) → распаковать папки `Yanlo-*` в `BepInEx/plugins/`.
 
-**Yanlo-EpiTombFit 1.3.0** — **на клиенте и на dedicated** (не только у себя в r2modman).
+**Хост:** скопируй **Yanlo-EpiTombFit** и **Yanlo-PortalWardFix** ещё и на dedicated.
 
-Чинит пропадание вещей из **быстрых слотов (Z / X / C)** и из **слотов экипировки** (броня, пояс, wishbone, амулет и т.п.), если ты **умер далеко от базы** и потом **вернулся через портал** к могиле: раньше могила могла **сама опустеть**, или после забора лут **не возвращался на место** (оказывался в хотбаре или пропадал). Теперь вещи должны оставаться в могиле и возвращаться **туда же**, откуда лежали.
+### Yanlo-PortalWardFix 1.1.0
 
-Нужен **AzuExtendedPlayerInventory** (как и весь наш стек).
+- Нужен **на клиенте** вместе с WardIsLove
+- Чинит портал «насквозь»
+- После портала друзья снова открывают **свои** сундуки (варды включены)
+- Перезапиши папку `Yanlo-PortalWardFix`
 
-**Yanlo-CraftyBoxesDrawerFix 1.1.6** — мельница / прялка / печь тянут из **ItemDrawers** (Shift+E), не только из сундуков. Остальные **Yanlo-*** без изменений (ChestUnload, ShipExploration).
+### Yanlo-EpiTombFit 1.3.0
 
-Zip [`YanloMods-cycle-2026-08-18.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-18/YanloMods-cycle-2026-08-18.zip) → распаковать папки `Yanlo-*` в `BepInEx/plugins/`. **Хост:** скопируй **Yanlo-EpiTombFit** и **Yanlo-PortalWardFix** ещё и на dedicated server.
+- **Клиент + dedicated** (не только r2modman)
+- Смерть далеко от базы + возврат **порталом** к могиле
+- Вещи из **QS (Z/X/C)** и **слотов экипировки** не должны пропадать / уезжать в хотбар
+- Нужен AzuEPI
+
+### Yanlo-CraftyBoxesDrawerFix 1.1.6
+
+- Мельница / прялка / печь тянут из **ItemDrawers** (`Shift+E`), не только из сундуков
+
+ChestUnload / ShipExploration — без изменений.
+
+## Конфиги
+
+Готовые файлы: [`cfg/`](https://github.com/yanlogan/valheim/tree/main/cfg)  
+Или только ключи: [STACK → Конфиги](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#конфиги) (свои хоткеи не затирай).
+
+### Blast furnace (ValheimPlus, dedicated)
+
+- `[Furnace] maximumOre = 100` (было 50)
+- Уголь уже 100, `autoDeposit = true`
+- Рестарт dedicated; уже стоящие печи — **перестроить**
+
+Файл: [`cfg/valheim_plus.cfg`](https://github.com/yanlogan/valheim/blob/main/cfg/valheim_plus.cfg)
+
+### AutoMapPins (optional)
+
+- Файл [`FixItFelix.AutoMapPins.categories.vanilla.yaml`](https://github.com/yanlogan/valheim/blob/main/cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → `BepInEx/config/`
+- Ресурсы (медь, tar, pickables) только **рядом**; крипты и суртлинг-фермы — навсегда
+- Есть и в Assets этого релиза

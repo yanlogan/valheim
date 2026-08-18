@@ -14,7 +14,8 @@ $Files = @(
     "Azumatt.AzuCraftyBoxes.cfg",
     "valheim_plus.cfg",
     "Azumatt.AzuAntiArthriticCrafting.cfg",
-    "com.inventoryux.valheim.cfg"
+    "com.inventoryux.valheim.cfg",
+    "FixItFelix.AutoMapPins.categories.vanilla.yaml"
 )
 
 if (-not (Test-Path $SrcDir)) {
