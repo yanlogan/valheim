@@ -30,7 +30,10 @@
 ## Карта и корабли
 
 - **Better Cartography Table** — пины по умолчанию **private**. Public (шарится через стол): подойти к столу, открыть карту **со стола**, `LeftShift`+клик по своему пину.
-- **AutoMapPins** (optional) — радар (дикое несобранное, загруженная зона): медь, морковь/репа (`seeds`), ячмень, лён, molten core, tar, живые гнёзда. Лук-семена — лут сундуков в горах, растение не пиним. Чертополох выкл. Крипты / данжи / dvergr / суртлинг-гейзеры — permanent. Yaml: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml).
+- **AutoMapPins** (optional) — радар (дикое несобранное, загруженная зона): медь, морковь/репа (`seeds`), ячмень, лён, molten core, tar, живые гнёзда. Лук-семена — лут сундуков в горах, растение не пиним. Чертополох выкл. Крипты / данжи / dvergr / суртлинг-гейзеры — permanent.
+  - Файл: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → `%AppData%\r2modmanPlus-local\Valheim\profiles\<профиль>\BepInEx\config\` (мод **только на клиенте**, не на dedicated). AMP-пины **не** шарятся через стол.
+  - Проверка: отойти от меди → дальние COPPER пропали; подойти к невырытой → пин есть; вырыть → пин снялся. Грядки моркови/репы не пинятся. Crypt / Troll / Surtlings остаются на всей карте. Красный **X** = отмечено, не удалено (ПКМ).
+  - Старые AMP-пины уже в персонаже: **сохраниться → в меню → зайти снова** (иногда два раза). Не `amp clear_pins` (сносит все пины, включая свои). Fuling / ручные метки yaml не трогает.
 - **Yanlo-ShipExplorationAll** — больший радиус тумана на Raft/Karve/Longship и кораблях OdinShip.
 
 ## Скиллы и еда
