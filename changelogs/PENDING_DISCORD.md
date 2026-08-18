@@ -13,6 +13,6 @@ Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18
 **Конфиги** из cfg/ (или ключи из STACK):
 
 - **Blast furnace:** V+ `[Furnace] maximumOre = 100`. Рестарт dedicated; старые печи перестроить
-- **AutoMapPins** (если ставишь): yaml — дикие семена морковь/репа/лук + ячмень/лён/tar рядом; thistle выкл; данжи+суртлинги навсегда
+- **AutoMapPins** (если ставишь): yaml — дикие семена морковь/репа + ячмень/лён/tar рядом; лук-семена не пиним (сундуки); thistle выкл; данжи+суртлинги навсегда
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md

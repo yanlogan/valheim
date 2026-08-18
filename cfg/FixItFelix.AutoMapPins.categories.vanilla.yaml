@@ -165,11 +165,6 @@ seeds:
       isPermanent: false
       isActive: true
       groupable: true
-    Pickable_SeedOnion:
-      name: Onion
-      isPermanent: false
-      isActive: true
-      groupable: true
   isActive: true
   iconName: seed
 crypt:
