@@ -1,10 +1,5 @@
 # Discord paste — копировать ниже
 
-[https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18](https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18)
+[https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-19](https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-19)
 
-- фикс телепорта с базы Yanlo-PortalWardFix
-- фикс пропадания экипировки и быстрых слотов после смерти вне базы Yanlo-EpiTombFit
-- мельница, прялка и печь теперь тянут ресы при взаимодействии не только из сундуков/инвентаря, но и из ящиков; пустой ящик остаётся с типом предмета (не сбрасывается) Yanlo-CraftyBoxesDrawerFix
-- добавлен файлик от спама автопинами на карте. удалить старые через перелогин
-- увеличено кол-во перерабатываемой руды в плавильне черного металла
-
+- по желанию: таблички светятся в темноте, чтобы читать ночью Glowing_Signs

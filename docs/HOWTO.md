@@ -44,6 +44,7 @@
 ## UI / QoL (если поставил optional)
 
 - **AAA Recipe Tracker** — клик по иконке рецепта = добавить в панель; `LeftControl`+иконка = убрать; **`PageUp`** = показать/скрыть (у хоста так; сверь F1).
+- **Glowing_Signs** (optional) — таблички светятся в темноте, читаются ночью.
 - **Configuration Manager** — `F1`.
 - **VNEI** / **ItemCompare** — поиск и сравнение предметов.
 

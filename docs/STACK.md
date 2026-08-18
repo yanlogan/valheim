@@ -1,6 +1,6 @@
 # Стек модов (чеклист)
 
-Last updated: 2026-08-18
+Last updated: 2026-08-19
 Менеджер: **r2modman** → Valheim  
 Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)  
 Геймплей: [HOWTO.md](HOWTO.md)
@@ -28,7 +28,6 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 |-----|------------|---------------|
 | AzuAutoStore<br><sub>Azumatt</sub> | Автоскладирование лута из инвентаря в соседние сундуки | С ItemDrawers может **съедать остаток** стака |
 | Asocial_Cartography<br><sub>VentureValheim</sub> | Старый шаринг карты | Заменён [Better_Cartography_Table](#инвентарь); Disable/Uninstall |
-| ConditionalConfigSync<br><sub>shudnal</sub> | Условный sync конфигов клиент↔сервер | Сирота, не используется |
 | NoBuildRestriction<br><sub>BlackViking</sub> | Снимает ванильные лимиты стройки | Не используем |
 | ShipExploration<br><sub>GemHunter1</sub> | Больший радиус карты на корабле | Заменён [Yanlo-ShipExplorationAll](#yanlo); вместе не ставить |
 | TimedTorchesStayLit<br><sub>TastyChickenLegs</sub> | Факелы/костры не прогорают по таймеру | Только на **dedicated**; с клиента убрать |
@@ -130,6 +129,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Expand_World_Music<br><sub>JereKuusela</sub> | Движок кастомной музыки; нужен для Forteca |
 | FenceSnap<br><sub>MSchmoecker</sub> | Snap заборов при стройке |
 | Forteca_Soundtrack<br><sub>BlackViking</sub> | Треки Forteca в меню (через EWM) |
+| Glowing_Signs<br><sub>ituallovich</sub> | Таблички светятся в темноте — чтобы читать ночью |
 | ImprovedBuildHud<br><sub>RandyKnapp</sub> | В требованиях куска — сколько материала у тебя и сколько раз можно построить |
 | ItemCompare<br><sub>Azumatt</sub> | Сравнение статов двух предметов |
 | MyLittleUI<br><sub>shudnal</sub> | Пачка UI-мелочей: таймеры станций, имена сундуков, баффы, прогноз погоды и т.п. |
