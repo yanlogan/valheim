@@ -178,6 +178,10 @@ Container Range = 50
 ; valheim_plus.cfg
 [CraftFromChest]
 enabled = false
+[Furnace]
+maximumOre = 100
+maximumCoal = 100
+autoDeposit = true
 [StructuralIntegrity]
 enabled = true
 [GameClock]

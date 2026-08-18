@@ -60,6 +60,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 ### Конфиг
 
 - **Sort restored** (speculative disable reverted). `DisplaySortButtons=Both`; `mergeWithExistingStacks=true`. Отладочный Yanlo-EpiDeathDiag снят — вместо него **Yanlo-EpiTombFit** в Release.
+- **ValheimPlus** `[Furnace]` (blast furnace): `maximumOre = 100` (было 50; уголь уже 100). `autoDeposit = true`. Уже стоящие печи — перестроить или рестарт dedicated.
 
 
 Готовые файлы: [`cfg/`](../cfg/). Или только эти ключи ([STACK → Конфиги](../docs/STACK.md#конфиги)), если свои бинды надо сохранить:
@@ -94,6 +95,10 @@ Container Range = 50
 ; valheim_plus.cfg
 [CraftFromChest]
 enabled = false
+[Furnace]
+maximumOre = 100
+maximumCoal = 100
+autoDeposit = true
 [StructuralIntegrity]
 enabled = true
 [GameClock]

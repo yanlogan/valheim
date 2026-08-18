@@ -10,4 +10,6 @@ Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18
 
 Zip → `BepInEx/plugins/` (все папки `Yanlo-*`). Остальные Yanlo в zip без изменений.
 
+**V+ blast furnace:** `maximumOre = 100` в `valheim_plus.cfg` (`[Furnace]`). Обновить cfg из [`cfg/`](https://github.com/yanlogan/valheim/tree/main/cfg) или ключи из PENDING. Рестарт dedicated; старые печи — перестроить.
+
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
