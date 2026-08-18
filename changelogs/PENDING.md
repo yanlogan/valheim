@@ -58,6 +58,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 
 - **Sort restored** (speculative disable reverted). `DisplaySortButtons=Both`; `mergeWithExistingStacks=true`. Отладочный Yanlo-EpiDeathDiag снят — вместо него **Yanlo-EpiTombFit** в Release.
 - **ValheimPlus** `[Furnace]` (blast furnace): `maximumOre = 100` (было 50; уголь уже 100). `autoDeposit = true`. Уже стоящие печи — перестроить или рестарт dedicated.
+- **AutoMapPins** (optional, только клиент): yaml хоста в [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) — медь/тар/pickables/гнёзда только рядом; крипты+суртлинги навсегда. Скопируй файл, если ставишь AMP.
 
 
 Готовые файлы: [`cfg/`](../cfg/). Или только эти ключи ([STACK → Конфиги](../docs/STACK.md#конфиги)), если свои бинды надо сохранить:

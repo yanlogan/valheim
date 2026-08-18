@@ -123,7 +123,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Имя | Что делает |
 |-----|------------|
 | AAA_Crafting<br><sub>Azumatt</sub> | Удобнее UI крафта + Recipe Tracker ([HOWTO](HOWTO.md#ui--qol-если-поставил-optional)) |
-| AutoMapPins<br><sub>abfielder</sub> | Автопины на карте по ресурсам/местам |
+| AutoMapPins<br><sub>abfielder</sub> | Автопины: ресурсы рядом (медь/тар/pickables), данжи+суртлинг-фермы навсегда ([HOWTO](HOWTO.md#карта-и-корабли)). Yaml: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) |
 | BetterAutoRun<br><sub>nearbear</sub> | Улучшенный autorun |
 | BetterSounds<br><sub>Wiandar</sub> | Замена SFX (**male**); после Install — `CustomAudio.zip`; не вместе с Female |
 | CraftGuard<br><sub>jg224</sub> | Удобная сетка кусков в молотке по назначению (`OrganizeRecipes=false` с AAA) |
@@ -148,6 +148,8 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 Исправь **только эти строчки**, если тебе нужно сохранить свои остальные настройки этого мода. Если не нужно — возьми готовый файл из [`cfg/`](../cfg/) (скопируй целиком поверх своего).
 
 Не затирай `*Keybind*` / свои бинды, если правишь вручную. `UseTopDownLogicForEverything` **не** приходит с сервера — выставь у себя (или возьми готовый QSS cfg).
+
+Optional **AutoMapPins**: целиком [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) (не в `sync-cfg.ps1`).
 
 ```ini
 ; goldenrevolver.quick_stack_store.cfg

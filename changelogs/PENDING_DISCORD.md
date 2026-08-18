@@ -16,4 +16,6 @@ Zip → `BepInEx/plugins/` (все папки `Yanlo-*`).
 
 **V+ blast furnace:** `maximumOre = 100` в `valheim_plus.cfg` (`[Furnace]`). cfg из репо или ключи из PENDING. Рестарт dedicated; старые печи — перестроить.
 
+**AutoMapPins** (если ставишь): скопируй `cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml` — ресурсы рядом, данжи+суртлинги навсегда.
+
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
