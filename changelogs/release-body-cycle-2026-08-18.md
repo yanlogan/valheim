@@ -1,6 +1,7 @@
 # cycle-2026-08-18
 
 **С чего начать:**
+
 - [Список модов](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md)
 - [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md)
 - [Готовые настройки](https://github.com/yanlogan/valheim/tree/main/cfg)
@@ -27,13 +28,14 @@
 
 ### Если установлен мод AutoMapPins
 
-- Файл [`FixItFelix.AutoMapPins.categories.vanilla.yaml`](https://github.com/yanlogan/valheim/blob/main/cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → свой `BepInEx/config/` (есть и в Assets релиза)
-- Ресурсы только **рядом и несобранные**: медь, дикие семена (морковь/репа), ячмень, лён, molten core, tar; живые гнёзда. Лук-семена — сундуки в горах (не пиним). Чертополох выкл
-- Крипты / данжи / суртлинг-фермы — навсегда
-- Если карта уже засрана старыми AMP-пинами: сохраниться → в меню → зайти (иногда два раза). Не пиши `amp clear_pins`
+- Файл [`FixItFelix.AutoMapPins.categories.vanilla.yaml`](https://github.com/yanlogan/valheim/blob/main/cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → свой `BepInEx/config/`
+- Теперь на карте будут отмечаться только ресурсы **рядом и только несобранные**: медь, дикие семена (морковь/репа), ячмень, лён, ядра суртлингов, дёготь; спавны (кроме суртлингов, это как вечный огонь). Семена лука не пинятся, они только находятся в сундуках в горах. 
+- Крипты / данжи / суртлинг-спавны не удаляются
+- Если карта уже засрана старыми пинами от мода: сохраниться → выйти в меню → зайти (иногда два раза)
 
 ---
 
 ## Изменено на сервере (делать ничего не нужно)
 
 - Увеличено количество перерабатываемой руды в плавильне чёрного металла до 100
+

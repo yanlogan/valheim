@@ -36,8 +36,7 @@
 → дописать changelogs/PENDING.md + PENDING_DISCORD.md
 → при смене стека обновить docs/STACK.md (+ HOWTO при новом UX)
 → при правке cfg на Client: .\scripts\sync-cfg.ps1 (+ ключи в STACK → Конфиги)
-→ skill `valheim-config-docs`: **commit + push** `origin/main` автоматом (не ждать «пуш»)
-→ mid-cycle: при правке дружеских notes/cfg — `gh release edit … --notes-file changelogs/release-body-….md` (без закрытия цикла). В **Release notes** не писать «цикл open / PENDING» — это только в `PENDING.md` / HOST.
+→ показать хосту `changelogs/release-body-cycle-….md` + `PENDING_DISCORD.md` (чипы в чате) → **ждать ок** → тогда commit + push `origin/main` + mid-cycle `gh release edit --notes-file changelogs/release-body-….md`. Не пушить до аппрува. В **Release notes** не писать «цикл open / PENDING» — это только в `PENDING.md` / HOST.
 → «синк с друзьями» (все забрали):
     PENDING.md → changelogs/YYYY-MM-DD_slug.md
     .\scripts\release.ps1 -Tag cycle-YYYY-MM-DD -NotesFile .\changelogs\YYYY-MM-DD_slug.md
