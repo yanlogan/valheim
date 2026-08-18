@@ -5,48 +5,34 @@
 - [Как играть](https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md)
 - [Готовые настройки](https://github.com/yanlogan/valheim/tree/main/cfg)
 
-## Yanlo zip
-
 [`YanloMods-cycle-2026-08-18.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-18/YanloMods-cycle-2026-08-18.zip) → распаковать папки `Yanlo-*` в `BepInEx/plugins/`.
-
-**Хост:** скопируй **Yanlo-EpiTombFit** и **Yanlo-PortalWardFix** ещё и на dedicated.
 
 ### Yanlo-PortalWardFix 1.1.0
 
-- Нужен **на клиенте** вместе с WardIsLove
-- Чинит портал «насквозь»
-- После портала друзья снова открывают **свои** сундуки (варды включены)
-- Перезапиши папку `Yanlo-PortalWardFix`
+- Нужен, если установлен WardIsLove
+- Чинит неработающий телепорт с базы
+- Чинит доступ в свои же сундуки после захода на сервер / возвращения на базу через портал
 
 ### Yanlo-EpiTombFit 1.3.0
 
-- **Клиент + dedicated** (не только r2modman)
-- Смерть далеко от базы + возврат **порталом** к могиле
-- Вещи из **QS (Z/X/C)** и **слотов экипировки** не должны пропадать / уезжать в хотбар
-- Нужен AzuEPI
+- Нужен, если установлен AzuExtendedPlayerInventory
+- Чинит пропадание экипировки и быстрых слотов при смерти вне базы после телепорта
 
 ### Yanlo-CraftyBoxesDrawerFix 1.1.6
 
-- Мельница / прялка / печь тянут из **ItemDrawers** (`Shift+E`), не только из сундуков
-
-ChestUnload / ShipExploration — без изменений.
+- Мельница, прялка и печь теперь тянут ресы при взаимодействии не только из сундуков/инвентаря, но и из ящиков
 
 ## Конфиги
 
-Готовые файлы: [`cfg/`](https://github.com/yanlogan/valheim/tree/main/cfg)  
-Или только ключи: [STACK → Конфиги](https://github.com/yanlogan/valheim/blob/main/docs/STACK.md#конфиги) (свои хоткеи не затирай).
+### Если установлен мод AutoMapPins
 
-### Blast furnace (ValheimPlus, dedicated)
+- Файл `FixItFelix.AutoMapPins.categories.vanilla.yaml` → в свой `BepInEx/config/`
+- Файлик от спама автопинами на карте
+- Ресурсы только **рядом и только несобранные**: медь, дикие семена (морковь/репа), ячмень, лён, ядра суртлинга, дёготь; неразрушенные спавны. Семена лука не пинятся — они только в сундуках в горах
+- Данжи, пещеры и суртлинг-спавны остаются навсегда
 
-- `[Furnace] maximumOre = 100` (было 50)
-- Уголь уже 100, `autoDeposit = true`
-- Рестарт dedicated; уже стоящие печи — **перестроить**
+---
 
-Файл: [`cfg/valheim_plus.cfg`](https://github.com/yanlogan/valheim/blob/main/cfg/valheim_plus.cfg)
+## Изменено на сервере (делать ничего не нужно)
 
-### AutoMapPins (optional)
-
-- Файл [`FixItFelix.AutoMapPins.categories.vanilla.yaml`](https://github.com/yanlogan/valheim/blob/main/cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → `BepInEx/config/`
-- Ресурсы только **рядом и несобранные**: медь, дикие семена (морковь/репа), ячмень, лён, molten core, tar; живые гнёзда. Лук-семена — сундуки в горах (не пиним). Чертополох выкл.
-- Крипты и суртлинг-фермы — навсегда
-- Есть и в Assets этого релиза
+- Увеличено количество перерабатываемой руды в плавильне чёрного металла до 100

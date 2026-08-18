@@ -1,0 +1,19 @@
+---
+description: Стиль GitHub Release / Discord для друзей (не хост-жаргон)
+globs: changelogs/release-body*.md,changelogs/PENDING_DISCORD.md
+alwaysApply: false
+---
+
+# Release notes для друзей
+
+Канон: [docs/RELEASE_NOTES.md](docs/RELEASE_NOTES.md). Эталон — `cycle-2026-08-18`.
+
+Не копируй `PENDING.md` в release-body / Discord. Это два разных текста.
+
+**Discord:** URL релиза, потом буллеты. Строка = фикс/изменение глазами игрока, имя мода **в конце**. Без версий, zip, «нужен если», STACK/HOWTO/cfg. Конфиг: «файлик от спама автопинами». Сервер: «руда в плавильне черного металла» — без слова сервер.
+
+**GitHub:** шапка «С чего начать» — Список модов / Как играть / Готовые настройки (ссылки на github.com/yanlogan/valheim `docs/STACK.md`, `docs/HOWTO.md`, `cfg/`). Потом zip → `Yanlo-*`. Мод: «Нужен, если установлен X» + что чинит. Сервер — блок «делать ничего не нужно». Шапку не выкидывать.
+
+- Симптом игрока, не «насквозь» / QS / AzuEPI / ItemDrawers / Blast Furnace.
+- Discord короче GitHub: одна главная ситуация, не все триггеры.
+- Без `++`, ini-ключей, «перезапиши папку», «мод без изменений».

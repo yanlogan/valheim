@@ -13,8 +13,10 @@
 | `dist/` | сборка (gitignore) |
 | `docs/STACK.md` | канон стека для друзей |
 | `cfg/` | актуальные `.cfg` для друзей (копия целиком) |
-| `changelogs/PENDING.md` | дельта текущего цикла |
+| `changelogs/PENDING.md` | дельта текущего цикла (можно техничнее) |
 | `changelogs/PENDING_DISCORD.md` | короткий Discord paste |
+| `changelogs/release-body-*.md` | GitHub Release для друзей |
+| `docs/RELEASE_NOTES.md` | как писать Release / Discord |
 | `scripts/build.ps1` | → `dist/Yanlo-*` |
 | `scripts/install-client.ps1` | `dist/` → `Valheim_Client/plugins` |
 | `scripts/release.ps1` | zip + GitHub Release `cycle-DATE` |
@@ -40,10 +42,11 @@
     PENDING.md → changelogs/YYYY-MM-DD_slug.md
     .\scripts\release.ps1 -Tag cycle-YYYY-MM-DD -NotesFile .\changelogs\YYYY-MM-DD_slug.md
     новый PENDING из _PENDING_TEMPLATE.md
-→ Discord: PENDING_DISCORD (+ ссылки на Release и полный MD)
+→ Discord: PENDING_DISCORD (URL релиза + буллеты; стиль в RELEASE_NOTES.md)
 ```
 
-Release / PENDING = **дельта + ссылки**. Не дублировать полный STACK и не вставлять большие ini — канон файлов в `cfg/`, ключи в STACK `#конфиги`.
+Release / PENDING = **дельта + ссылки**. Не дублировать полный STACK и не вставлять большие ini — канон файлов в `cfg/`, ключи в STACK `#конфиги`.  
+Текст GitHub Release / Discord — [RELEASE_NOTES.md](RELEASE_NOTES.md): симптом для друга, не хост-жаргон; серверные правки в блок «делать ничего не нужно».
 
 Чужие моды: r2modman на Client. Нужные на dedicated — **руками** в  
 `C:\Program Files (x86)\Steam\steamapps\common\Valheim dedicated server\BepInEx\plugins`  
