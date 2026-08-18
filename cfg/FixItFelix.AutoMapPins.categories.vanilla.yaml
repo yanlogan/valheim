@@ -144,33 +144,13 @@ berries:
   iconName: berry48
 pickables:
   categoryConfiguredObjects:
-  - Pickable_Ashstone
   - Pickable_Barley_Wild
-  - Pickable_Branch
-  - Pickable_Charredskull
-  - Pickable_Dandelion
-  - Pickable_DragonEgg
-  - Pickable_DvergrLantern
-  - Pickable_DvergrStein
-  - Pickable_Fiddlehead
   - Pickable_Flax_Wild
-  - Pickable_Flint
-  - Pickable_ForestCryptRemains01
-  - Pickable_ForestCryptRemains02
-  - Pickable_ForestCryptRemains03
-  - Pickable_ForestCryptRemains04
   - Pickable_MoltenCoreStand
-  - Pickable_MountainRemains01_buried
-  - Pickable_Pot_Shard
   - Pickable_SeedTurnip
-  - Pickable_SmokePuff
-  - Pickable_Stone
-  - Pickable_SulfurRock
-  - Pickable_Swordpiece3
   - Pickable_Tar
   - Pickable_TarBig
   - Pickable_Thistle
-  - Pickable_VoltureEgg
   isActive: true
   isPermanent: false
   groupable: true

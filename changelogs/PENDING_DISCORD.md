@@ -13,6 +13,6 @@ Release: https://github.com/yanlogan/valheim/releases/tag/cycle-2026-08-18
 **Конфиги** из cfg/ (или ключи из STACK):
 
 - **Blast furnace:** V+ `[Furnace] maximumOre = 100`. Рестарт dedicated; старые печи перестроить
-- **AutoMapPins** (если ставишь): `FixItFelix.AutoMapPins.categories.vanilla.yaml` в `BepInEx/config/`
+- **AutoMapPins** (если ставишь): `FixItFelix.AutoMapPins.categories.vanilla.yaml` — ячмень/лён/tar/репа/чертополох/морковь рядом; данжи+суртлинги навсегда
 
 Как пользоваться: https://github.com/yanlogan/valheim/blob/main/docs/HOWTO.md
