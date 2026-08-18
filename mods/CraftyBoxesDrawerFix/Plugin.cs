@@ -15,6 +15,8 @@ namespace CraftyBoxesDrawerFix
 {
     /// <summary>
     /// CraftyBoxes 1.8.15 drawer inject + AAA Max fix.
+    /// 1.1.6: also inject while hovering Smelter/etc (mill, spinning wheel, kiln) —
+    /// those are not CraftingStation, so 1.1.4 skipped drawers (chests still worked).
     /// 1.1.5: pin AAA multi-craft/reclaim queue to the started recipe (no jump to next).
     /// 1.1.4: skip drawer inject outside craft station / build mode (inventory/chest FPS).
     /// 1.1.3: one AggregatedMkzContainer (dict ItemCount) instead of N wrappers;
@@ -28,7 +30,7 @@ namespace CraftyBoxesDrawerFix
     {
         public const string PluginGuid = "yanlo.CraftyBoxesDrawerFix";
         public const string PluginName = "CraftyBoxes Drawer Fix";
-        public const string PluginVersion = "1.1.5";
+        public const string PluginVersion = "1.1.6";
 
         internal const string AaaGuid = "Azumatt.AzuAntiArthriticCrafting";
         private const float MkzInjectInterval = 0.5f;
@@ -56,6 +58,9 @@ namespace CraftyBoxesDrawerFix
                 typeof(MkzItemDrawers_API.mkzDrawer),
                 "ConsumeSilently",
                 new[] { typeof(int) });
+
+        private static readonly FieldInfo PlayerHoveringField =
+            AccessTools.Field(typeof(Player), "m_hovering");
 
         private static MethodInfo _getNearbyOpen;
 
@@ -378,8 +383,9 @@ namespace CraftyBoxesDrawerFix
         }
 
         /// <summary>
-        /// Drawers only matter for craft-from-containers / build HUD pull.
+        /// Drawers only matter for craft-from-containers / build HUD / station fill.
         /// Inventory or chest alone: skip FindObjects + inject (was still hitching FPS).
+        /// Mill / spinning wheel / kiln are Smelter, not CraftingStation — still inject on hover.
         /// </summary>
         private static bool NeedsDrawerInject()
         {
@@ -394,7 +400,29 @@ namespace CraftyBoxesDrawerFix
                 return true;
             }
 
-            return player.InPlaceMode();
+            if (player.InPlaceMode())
+            {
+                return true;
+            }
+
+            return HoverIsCraftyBoxesFillTarget(player);
+        }
+
+        private static bool HoverIsCraftyBoxesFillTarget(Player player)
+        {
+            GameObject hover = PlayerHoveringField?.GetValue(player) as GameObject;
+            if (hover == null)
+            {
+                return false;
+            }
+
+            Transform t = hover.transform;
+            return t.GetComponentInParent<Smelter>() != null
+                || t.GetComponentInParent<Fermenter>() != null
+                || t.GetComponentInParent<Fireplace>() != null
+                || t.GetComponentInParent<CookingStation>() != null
+                || t.GetComponentInParent<Turret>() != null
+                || t.GetComponentInParent<ShieldGenerator>() != null;
         }
 
         private void PatchCraftyBoxesNearby()

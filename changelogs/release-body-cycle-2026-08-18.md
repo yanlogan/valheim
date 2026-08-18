@@ -13,6 +13,6 @@
 
 Нужен **AzuExtendedPlayerInventory** (как и весь наш стек).
 
-Остальные **Yanlo-*** в zip без изменений (ChestUnload, DrawerFix, PortalWardFix, ShipExploration).
+**Yanlo-CraftyBoxesDrawerFix 1.1.6** — мельница / прялка / печь тянут из **ItemDrawers** (Shift+E), не только из сундуков. Остальные **Yanlo-*** без изменений (ChestUnload, PortalWardFix, ShipExploration).
 
 Zip [`YanloMods-cycle-2026-08-18.zip`](https://github.com/yanlogan/valheim/releases/download/cycle-2026-08-18/YanloMods-cycle-2026-08-18.zip) → распаковать папки `Yanlo-*` в `BepInEx/plugins/`. **Хост:** скопируй **Yanlo-EpiTombFit** ещё и на dedicated server.

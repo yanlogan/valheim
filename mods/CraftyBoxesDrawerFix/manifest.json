@@ -1,10 +1,20 @@
-{
-  "name": "CraftyBoxesDrawerFix",
-  "version_number": "1.1.5",
-  "description": "Fix CraftyBoxes drawers + AAA Max + AAA multi-craft queue jump. Perf: inject only at craft/build.",
-  "dependencies": [
-    "denikson-BepInExPack_Valheim",
-    "Azumatt-AzuCraftyBoxes",
-    "makail-ItemDrawers"
-  ]
-}
+{
+
+  "name": "CraftyBoxesDrawerFix",
+
+  "version_number": "1.1.6",
+
+  "description": "Fix CraftyBoxes drawers + AAA Max + AAA queue. Inject at craft/build and Smelter hover (mill/wheel).",
+
+  "dependencies": [
+
+    "denikson-BepInExPack_Valheim",
+
+    "Azumatt-AzuCraftyBoxes",
+
+    "makail-ItemDrawers"
+
+  ]
+
+}
+
