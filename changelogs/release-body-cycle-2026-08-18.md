@@ -47,6 +47,6 @@ ChestUnload / ShipExploration — без изменений.
 ### AutoMapPins (optional)
 
 - Файл [`FixItFelix.AutoMapPins.categories.vanilla.yaml`](https://github.com/yanlogan/valheim/blob/main/cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) → `BepInEx/config/`
-- Ресурсы только **рядом и несобранные**: медь, морковь, ячмень, лён, molten core, семена репы, tar, чертополох; живые гнёзда
+- Ресурсы только **рядом и несобранные**: медь, дикие семена (морковь/репа/лук), ячмень, лён, molten core, tar; живые гнёзда. Чертополох выкл.
 - Крипты и суртлинг-фермы — навсегда
 - Есть и в Assets этого релиза

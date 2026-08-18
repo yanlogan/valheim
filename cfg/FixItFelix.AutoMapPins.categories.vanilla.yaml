@@ -147,10 +147,8 @@ pickables:
   - Pickable_Barley_Wild
   - Pickable_Flax_Wild
   - Pickable_MoltenCoreStand
-  - Pickable_SeedTurnip
   - Pickable_Tar
   - Pickable_TarBig
-  - Pickable_Thistle
   isActive: true
   isPermanent: false
   groupable: true
@@ -159,6 +157,16 @@ seeds:
   individualConfiguredObjects:
     Pickable_SeedCarrot:
       name: Carrot
+      isPermanent: false
+      isActive: true
+      groupable: true
+    Pickable_SeedTurnip:
+      name: Turnip
+      isPermanent: false
+      isActive: true
+      groupable: true
+    Pickable_SeedOnion:
+      name: Onion
       isPermanent: false
       isActive: true
       groupable: true

@@ -30,7 +30,7 @@
 ## Карта и корабли
 
 - **Better Cartography Table** — пины по умолчанию **private**. Public (шарится через стол): подойти к столу, открыть карту **со стола**, `LeftShift`+клик по своему пину.
-- **AutoMapPins** (optional) — радар (несобранное, загруженная зона): медь, морковь, ячмень, лён, molten core, семена репы, tar, чертополох, живые гнёзда. Крипты / данжи / dvergr / суртлинг-гейзеры — permanent. Ягоды и луговые грибы выкл. Yaml: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml). Старый мусор: сейв+релог; пины `Tar` от ям — кликом. Не юзай `amp clear_pins`.
+- **AutoMapPins** (optional) — радар (дикое несобранное, загруженная зона): медь, морковь/репа/лук (`seeds`), ячмень, лён, molten core, tar, живые гнёзда. Чертополох выкл. Крипты / данжи / dvergr / суртлинг-гейзеры — permanent. Yaml: [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml). Старый мусор: сейв+релог. Не юзай `amp clear_pins`.
 - **Yanlo-ShipExplorationAll** — больший радиус тумана на Raft/Karve/Longship и кораблях OdinShip.
 
 ## Скиллы и еда

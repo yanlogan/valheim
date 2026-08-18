@@ -59,7 +59,7 @@ ChestUnload / ShipExploration в zip **без изменений**.
 
 - **Sort restored** (speculative disable reverted). `DisplaySortButtons=Both`; `mergeWithExistingStacks=true`. Отладочный Yanlo-EpiDeathDiag снят — вместо него **Yanlo-EpiTombFit** в Release.
 - **ValheimPlus** `[Furnace]` (blast furnace): `maximumOre = 100` (было 50; уголь уже 100). `autoDeposit = true`. Уже стоящие печи — перестроить или рестарт dedicated.
-- **AutoMapPins** (optional, только клиент): yaml в [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) — радар: медь, морковь, ячмень/лён/molten/репа/tar/чертополох, живые гнёзда; крипты+суртлинги навсегда. Скопируй файл, если ставишь AMP.
+- **AutoMapPins** (optional, только клиент): yaml в [`cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml`](../cfg/FixItFelix.AutoMapPins.categories.vanilla.yaml) — радар: медь, дикие семена морковь/репа/лук, ячмень/лён/molten/tar, живые гнёзда; thistle выкл; крипты+суртлинги навсегда.
 
 
 Готовые файлы: [`cfg/`](../cfg/). Или только эти ключи ([STACK → Конфиги](../docs/STACK.md#конфиги)), если свои бинды надо сохранить:
