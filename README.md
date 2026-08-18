@@ -35,7 +35,7 @@
 | Missing prefab / розовый куб | Нет контент-мода из [STACK](docs/STACK.md) (PlantEverything, OdinShip, BoneAppetit, …) |
 | Нет кнопки **Unload** / карта на лодке как ваниль | Не распакован **Yanlo** zip (`ChestUnloadButton` / `ShipExplorationAll`) в `plugins/` |
 | В drawers / у крафта **0/N**, хотя материалы в настенных ящиках есть; AAA Max врёт; AAA amount>1 прыгает на следующий рецепт; мельница/прялка не грузит из drawers (сундук ок) | Нужен **Yanlo-CraftyBoxesDrawerFix** **1.1.6+** из zip (клиент) |
-| Портал не работает, проходишь насквозь (особенно с базы) | **Yanlo-PortalWardFix** из zip + **WardIsLove**. Баг WardIsLove: радиус последнего инициализированного варда ломает считывание близости портала |
+| Портал не работает, проходишь насквозь; после портала не открываются **свои** сундуки (варды вкл) | **Yanlo-PortalWardFix 1.1.0** из zip + **WardIsLove**. Баг WardIsLove с радиусом варда |
 | Sort пакует **снизу вверх** | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**, с сервера не приходит) — или готовый файл из [`cfg/`](cfg/) |
 | Крафт жрёт ресурсы **дважды** | V+ `[CraftFromChest] enabled = false` при CraftyBoxes ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот **`.yml`** из `BepInEx/config/` (`.cfg` не трогай); мод создаст заново |

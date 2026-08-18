@@ -1,7 +1,7 @@
 {
   "name": "PortalWardFix",
-  "version_number": "1.0.1",
+  "version_number": "1.1.0",
   "website_url": "",
-  "description": "Fixes WardIsLove silent portal deny (IsInside radius clobber + empty INSIDE list).",
+  "description": "Fixes WardIsLove IsInside radius clobber (chests after portal + silent portal deny). Does not bypass NoTeleport.",
   "dependencies": ["denikson-BepInExPack_Valheim-5.4.2202", "Azumatt-WardIsLove"]
 }

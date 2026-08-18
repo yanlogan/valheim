@@ -112,7 +112,7 @@ Yanlo zip: [Latest Release](https://github.com/yanlogan/valheim/releases/latest)
 | Yanlo-ChestUnloadButton<br><sub>Yanlo</sub> | **1.3.0** | Кнопка **Unload под** Take All; leftovers eligible → открытый сундук. Нужны [QSS](#инвентарь) + [SC Unload](#инвентарь) ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
 | Yanlo-CraftyBoxesDrawerFix<br><sub>Yanlo</sub> | **1.1.6** | Крафт видит drawers; Shift+E на мельнице/прялке/печи тоже тянет из drawers; не прыгает на следующий рецепт при крафте пачкой. Только клиент; нужен [AzuCraftyBoxes](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
 | Yanlo-EpiTombFit<br><sub>Yanlo</sub> | **1.3.0** | **Клиент + dedicated.** Чинит пропадание вещей из быстрых слотов и слотов экипировки при смерти **далеко от базы** + возврат **порталом** ([HOWTO](HOWTO.md#инвентарь-и-сундуки)) |
-| Yanlo-PortalWardFix<br><sub>Yanlo</sub> | **1.0.1** | Чинит неработающий портал с прохождением насквозь (баг WardIsLove с радиусом варда). **Нужен на клиенте** вместе с [WardIsLove](#инвентарь) ([HOWTO](HOWTO.md#крафт-и-стройка)) |
+| Yanlo-PortalWardFix<br><sub>Yanlo</sub> | **1.1.0** | Чинит портал «насквозь» и **свои сундуки после портала** при включённых вардах (баг WardIsLove с радиусом). **Нужен на клиенте** вместе с [WardIsLove](#инвентарь); на dedicated тоже ([HOWTO](HOWTO.md#крафт-и-стройка)) |
 | Yanlo-ShipExplorationAll<br><sub>Yanlo</sub> | **1.1.0** | Больший радиус карты на ванили + OdinShip. Вместо GemHunter [ShipExploration](#удалить) ([HOWTO](HOWTO.md#карта-и-корабли)) |
 
 ---
@@ -206,5 +206,5 @@ OrganizeRecipes = false
 ## Дополнительно
 <a id="дополнительно"></a>
 
-- **WardIsLove:** свой Thorward на доме, Ward Range = число со знака (GUI «%» = шкала 0–100); после рестарта сервера просто перезайди. Портал «сквозь» → **Yanlo-PortalWardFix** на клиенте.
+- **WardIsLove:** свой Thorward на доме, Ward Range = число со знака (GUI «%» = шкала 0–100); после рестарта сервера просто перезайди. Портал «сквозь» / свои сундуки не открываются после портала → **Yanlo-PortalWardFix 1.1.0** на клиенте (и на dedicated).
 - Не находится в Online → смотри автора под именем; иногда несколько пакетов с похожим названием.
