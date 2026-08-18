@@ -2,7 +2,7 @@
 
 
 
-Client-only patch. **1.1.6**
+Client-only patch. **1.1.7**
 
 
 
@@ -27,6 +27,10 @@ Per-item CraftyBoxes counts (no stale `AcbExtra`); allow `Max: 0`.
 AAA `queueNextCraft` auto-clicks Craft after each item. `UpdateCraftingPanel` can jump selection to list index 0 (`GetSelectedRecipeIndex` fallback) — next craft becomes the wrong recipe (same with Recycle reclaim). We pin selection to the started recipe, or cancel remaining AAA amount if it is gone/uncraftable.
 
 
+
+### Empty drawer keeps type (1.1.7)
+
+CraftyBoxes `ConsumeSilently` called ItemDrawers `Clear()` at qty 0 (same as Alt+E). We decrement qty only — empty drawer stays locked to that item (floor vacuum still works).
 
 ### Perf / station fill
 

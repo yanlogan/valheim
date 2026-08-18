@@ -15,6 +15,7 @@ namespace CraftyBoxesDrawerFix
 {
     /// <summary>
     /// CraftyBoxes 1.8.15 drawer inject + AAA Max fix.
+    /// 1.1.7: draining a drawer to 0 keeps the item type (no Clear / Alt+E wipe).
     /// 1.1.6: also inject while hovering Smelter/etc (mill, spinning wheel, kiln) —
     /// those are not CraftingStation, so 1.1.4 skipped drawers (chests still worked).
     /// 1.1.5: pin AAA multi-craft/reclaim queue to the started recipe (no jump to next).
@@ -25,12 +26,13 @@ namespace CraftyBoxesDrawerFix
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("Azumatt.AzuCraftyBoxes", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("Azumatt.AzuAntiArthriticCrafting", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("mkz.itemdrawers", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInProcess("valheim.exe")]
     public class Plugin : BaseUnityPlugin
     {
         public const string PluginGuid = "yanlo.CraftyBoxesDrawerFix";
         public const string PluginName = "CraftyBoxes Drawer Fix";
-        public const string PluginVersion = "1.1.6";
+        public const string PluginVersion = "1.1.7";
 
         internal const string AaaGuid = "Azumatt.AzuAntiArthriticCrafting";
         private const float MkzInjectInterval = 0.5f;
@@ -58,6 +60,16 @@ namespace CraftyBoxesDrawerFix
                 typeof(MkzItemDrawers_API.mkzDrawer),
                 "ConsumeSilently",
                 new[] { typeof(int) });
+
+        private static readonly FieldInfo MkzDrawerComponentField =
+            AccessTools.Field(typeof(MkzItemDrawers_API.mkzDrawer), "_drawer");
+
+        private static Type DrawerContainerType;
+        private static FieldInfo DrawerQuantityField;
+        private static FieldInfo DrawerItemField;
+        private static MethodInfo DrawerUpdateInventory;
+        private static MethodInfo DrawerOnContainerChanged;
+        private static MethodInfo DrawerUpdateVisuals;
 
         private static readonly FieldInfo PlayerHoveringField =
             AccessTools.Field(typeof(Player), "m_hovering");
@@ -266,18 +278,59 @@ namespace CraftyBoxesDrawerFix
 
         private static void ConsumeDrawer(MkzItemDrawers_API.mkzDrawer drawer, int amount)
         {
-            if (amount <= 0)
+            ConsumeDrawerKeepType(drawer, amount);
+        }
+
+        /// <summary>
+        /// Decrement qty without DrawerContainer.Clear(). Qty 0 keeps the locked item
+        /// (Save writes prefab + 0). Stock ConsumeSilently called Clear at 0 = Alt+E.
+        /// </summary>
+        internal static void ConsumeDrawerKeepType(MkzItemDrawers_API.mkzDrawer drawer, int amount)
+        {
+            if (amount <= 0 || drawer == null)
             {
                 return;
             }
 
-            if (ConsumeSilentlyMethod != null)
+            ZNetView nview = drawer.m_nview;
+            if (nview == null || !nview.IsValid())
             {
-                ConsumeSilentlyMethod.Invoke(drawer, new object[] { amount });
                 return;
             }
 
-            drawer.Remove(amount);
+            int current = drawer.Amount;
+            if (current <= 0)
+            {
+                return;
+            }
+
+            nview.ClaimOwnership();
+            int newQty = Math.Max(0, current - amount);
+
+            Component comp = MkzDrawerComponentField?.GetValue(drawer) as Component;
+            if (comp == null || DrawerQuantityField == null)
+            {
+                Instance?.Logger.LogWarning(
+                    "Drawer consume: DrawerContainer fields missing — skip (would Clear type).");
+                return;
+            }
+
+            DrawerQuantityField.SetValue(comp, newQty);
+            if (DrawerItemField?.GetValue(comp) != null && DrawerUpdateInventory != null)
+            {
+                DrawerUpdateInventory.Invoke(comp, null);
+            }
+
+            DrawerOnContainerChanged?.Invoke(comp, null);
+            DrawerUpdateVisuals?.Invoke(comp, null);
+        }
+
+        private static bool ConsumeSilentlyKeepTypePrefix(
+            MkzItemDrawers_API.mkzDrawer __instance,
+            int amount)
+        {
+            ConsumeDrawerKeepType(__instance, amount);
+            return false;
         }
 
         private void Awake()
@@ -309,6 +362,8 @@ namespace CraftyBoxesDrawerFix
                 info => info.Name == "GetNearbyContainers" && info.IsGenericMethodDefinition);
 
             PatchCraftyBoxesNearby();
+            InitDrawerAccess();
+            PatchConsumeSilentlyKeepType();
 
             if (Chainloader.PluginInfos.ContainsKey(AaaGuid))
             {
@@ -423,6 +478,50 @@ namespace CraftyBoxesDrawerFix
                 || t.GetComponentInParent<CookingStation>() != null
                 || t.GetComponentInParent<Turret>() != null
                 || t.GetComponentInParent<ShieldGenerator>() != null;
+        }
+
+        private static void InitDrawerAccess()
+        {
+            DrawerContainerType = Type.GetType("DrawerContainer, itemdrawers");
+            if (DrawerContainerType == null)
+            {
+                Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+                for (int i = 0; i < assemblies.Length; i++)
+                {
+                    if (assemblies[i].GetName().Name == "itemdrawers")
+                    {
+                        DrawerContainerType = assemblies[i].GetType("DrawerContainer");
+                        break;
+                    }
+                }
+            }
+
+            if (DrawerContainerType == null)
+            {
+                Instance.Logger.LogWarning("DrawerContainer type not found — empty-drawer type keep disabled.");
+                return;
+            }
+
+            DrawerQuantityField = AccessTools.Field(DrawerContainerType, "_quantity");
+            DrawerItemField = AccessTools.Field(DrawerContainerType, "_item");
+            DrawerUpdateInventory = AccessTools.Method(DrawerContainerType, "UpdateInventory");
+            DrawerOnContainerChanged = AccessTools.Method(DrawerContainerType, "OnContainerChanged");
+            DrawerUpdateVisuals = AccessTools.Method(DrawerContainerType, "UpdateVisuals");
+        }
+
+        private void PatchConsumeSilentlyKeepType()
+        {
+            if (ConsumeSilentlyMethod == null)
+            {
+                Logger.LogWarning("mkzDrawer.ConsumeSilently not found — cannot keep empty drawer type.");
+                return;
+            }
+
+            _harmony.Patch(
+                ConsumeSilentlyMethod,
+                prefix: new HarmonyMethod(
+                    AccessTools.Method(typeof(Plugin), nameof(ConsumeSilentlyKeepTypePrefix))));
+            Logger.LogInfo("ConsumeSilently: keep item type at qty 0 (no Clear).");
         }
 
         private void PatchCraftyBoxesNearby()
