@@ -15,6 +15,7 @@ namespace CraftyBoxesDrawerFix
 {
     /// <summary>
     /// CraftyBoxes 1.8.15 drawer inject + AAA Max fix.
+    /// 1.1.8: clamp Take Stack to prefab maxStackSize (MUC autodeposit poisons _item to 9999).
     /// 1.1.7: draining a drawer to 0 keeps the item type (no Clear / Alt+E wipe).
     /// 1.1.6: also inject while hovering Smelter/etc (mill, spinning wheel, kiln) —
     /// those are not CraftingStation, so 1.1.4 skipped drawers (chests still worked).
@@ -32,7 +33,7 @@ namespace CraftyBoxesDrawerFix
     {
         public const string PluginGuid = "yanlo.CraftyBoxesDrawerFix";
         public const string PluginName = "CraftyBoxes Drawer Fix";
-        public const string PluginVersion = "1.1.7";
+        public const string PluginVersion = "1.1.8";
 
         internal const string AaaGuid = "Azumatt.AzuAntiArthriticCrafting";
         private const float MkzInjectInterval = 0.5f;
@@ -364,6 +365,14 @@ namespace CraftyBoxesDrawerFix
             PatchCraftyBoxesNearby();
             InitDrawerAccess();
             PatchConsumeSilentlyKeepType();
+            if (TakeStackClamp.Apply(_harmony, DrawerContainerType, DrawerQuantityField, DrawerItemField))
+            {
+                Logger.LogInfo("Take Stack: clamp to prefab maxStackSize.");
+            }
+            else
+            {
+                Logger.LogWarning("Take Stack clamp skipped — DrawerContainer missing.");
+            }
 
             if (Chainloader.PluginInfos.ContainsKey(AaaGuid))
             {

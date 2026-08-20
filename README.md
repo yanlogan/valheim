@@ -34,12 +34,12 @@
 | Кик / «mod mismatch» | Нет **AzuCraftyBoxes** / **PlanBuild** / **WardIsLove** (и др. ServerSync) **той же версии**, что у хоста; мод не Enable |
 | Missing prefab / розовый куб | Нет контент-мода из [STACK](docs/STACK.md) (PlantEverything, OdinShip, BoneAppetit, …) |
 | Нет кнопки **Unload** / карта на лодке как ваниль | Не распакован **Yanlo** zip (`ChestUnloadButton` / `ShipExplorationAll`) в `plugins/` |
-| В drawers / у крафта **0/N**, хотя материалы в настенных ящиках есть; AAA Max врёт; AAA amount>1 прыгает на следующий рецепт; мельница/прялка не грузит из drawers (сундук ок); крафт **сбрасывает тип** пустого drawer | Нужен **Yanlo-CraftyBoxesDrawerFix** **1.1.7+** из zip (клиент) |
+| В drawers / у крафта **0/N**, хотя материалы в настенных ящиках есть; AAA Max врёт; AAA amount>1 прыгает на следующий рецепт; мельница/прялка не грузит из drawers (сундук ок); крафт **сбрасывает тип** пустого drawer; **E** после автосклада из печи съедает остаток | Нужен **Yanlo-CraftyBoxesDrawerFix** **1.1.8+** из zip (клиент) |
 | Портал не работает, проходишь насквозь; после портала не открываются **свои** сундуки (варды вкл) | **Yanlo-PortalWardFix 1.1.0** из zip + **WardIsLove**. Баг WardIsLove с радиусом варда |
 | Sort пакует **снизу вверх** | `UseTopDownLogicForEverything = true` в QSS cfg (**на каждом клиенте**, с сервера не приходит) — или готовый файл из [`cfg/`](cfg/) |
 | Крафт жрёт ресурсы **дважды** | V+ `[CraftFromChest] enabled = false` при CraftyBoxes ([STACK → Конфиги](docs/STACK.md#конфиги) / `cfg/`) |
 | В логе `Failed to deserialize Azumatt.AzuCraftyBoxes.yml` | Удали этот **`.yml`** из `BepInEx/config/` (`.cfg` не трогай); мод создаст заново |
-| **E** на ItemDrawer: взял стак, остаток **пропал** | Фикс в стеке Yanlo: **AzuAutoStore** в [Удалить](docs/STACK.md#удалить) — специально не ставим (иначе Take Stack может съесть остаток). Если уже стоит — выключи |
+| **E** на ItemDrawer: взял стак, остаток **пропал** | Нужен **DrawerFix 1.1.8+**. Не ставить **AzuAutoStore**. Если уже стоит — выключи |
 | Вещи **теряются при смерти** (с AzuEPI) | QSS только **Sort + Trash** — не включай Quick Stack / Restock / Store All (наш cfg так и сделан) |
 | Unload выкидывает грибы/ягоды/овощи не туда | Так задумано (`groupsList`). Dump-сундук после вылазки — **>14 м** от домов. Favorites QSS на Unload **не** влияют |
 | На корабле OdinShip (War/Merchant/каноэ…) туман как ваниль | Удали **GemHunter ShipExploration**; поставь **Yanlo-ShipExplorationAll** |

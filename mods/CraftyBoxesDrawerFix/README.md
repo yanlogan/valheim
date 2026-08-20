@@ -2,7 +2,7 @@
 
 
 
-Client-only patch. **1.1.7**
+Client-only patch. **1.1.8**
 
 
 
@@ -27,6 +27,10 @@ Per-item CraftyBoxes counts (no stale `AcbExtra`); allow `Max: 0`.
 AAA `queueNextCraft` auto-clicks Craft after each item. `UpdateCraftingPanel` can jump selection to list index 0 (`GetSelectedRecipeIndex` fallback) — next craft becomes the wrong recipe (same with Recycle reclaim). We pin selection to the started recipe, or cancel remaining AAA amount if it is gone/uncraftable.
 
 
+
+### Take Stack after autodeposit (1.1.8)
+
+V+ kiln/furnace `autoDeposit` writes into the drawer 1-slot inventory. MultiUserChest then clones that slot onto `_item` (`maxStackSize = 9999`). ItemDrawers `E` sent `Drop(9999)` → one vanilla stack in inventory, rest destroyed. We send prefab `maxStackSize` instead.
 
 ### Empty drawer keeps type (1.1.7)
 

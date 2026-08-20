@@ -2,9 +2,9 @@
 
   "name": "CraftyBoxesDrawerFix",
 
-  "version_number": "1.1.7",
+  "version_number": "1.1.8",
 
-  "description": "Fix CraftyBoxes drawers + AAA Max + AAA queue. Keep empty drawer item type. Inject at craft/build and Smelter hover.",
+  "description": "Fix CraftyBoxes drawers + AAA Max + AAA queue. Keep empty drawer type. Clamp Take Stack after autodeposit void.",
 
   "dependencies": [
 
